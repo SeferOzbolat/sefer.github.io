@@ -1,262 +1,361 @@
-<!DOCTYPE html>
-<html lang="tr">
+<!doctype html>
+<html class="no-js" lang="tr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!--====== Başlık ======-->
     <title>Sefer Özbolat - Bulut Bilişim Operatörlüğü</title>
-    <style>
-        :root {
-            --sidebar-bg: #1e293b;
-            --sidebar-text: #94a3b8;
-            --sidebar-text-light: #ffffff;
-            --main-bg: #f8fafc;
-            --card-bg: #ffffff;
-            --primary: #2563eb;
-            --text-main: #1e293b;
-            --text-muted: #64748b;
-            --border-color: #e2e8f0;
-        }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    <meta name="description" content="Sefer Özbolat - Kişisel Web Sitesi ve Özgeçmiş">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--main-bg);
-            color: var(--text-main);
-            line-height: 1.6;
-            padding: 30px 15px;
-        }
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
 
-        .resume-container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: var(--card-bg);
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-            display: grid;
-            grid-template-columns: 320px 1fr;
-            overflow: hidden;
-        }
+    <!--====== CSS Dosyaları ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/lineicons.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-        /* SOL PANEL (Sidebar) */
-        .sidebar {
-            background-color: var(--sidebar-bg);
-            color: var(--sidebar-text);
-            padding: 40px 25px;
-            display: flex;
-            flex-direction: column;
-            gap: 35px;
-        }
-
-        .profile-info h1 {
-            color: var(--sidebar-text-light);
-            font-size: 1.8rem;
-            margin-bottom: 5px;
-            font-weight: 700;
-        }
-
-        .profile-info .title-tag {
-            color: #38bdf8;
-            font-size: 0.95rem;
-            font-weight: 500;
-        }
-
-        .sidebar-section h3 {
-            color: var(--sidebar-text-light);
-            font-size: 1.1rem;
-            border-bottom: 2px solid #334155;
-            padding-bottom: 8px;
-            margin-bottom: 15px;
-            letter-spacing: 0.5px;
-        }
-
-        .contact-list {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            font-size: 0.9rem;
-        }
-
-        .contact-list li a {
-            color: var(--sidebar-text);
-            text-decoration: none;
-            word-break: break-all;
-            transition: color 0.2s;
-        }
-
-        .contact-list li a:hover {
-            color: var(--sidebar-text-light);
-        }
-
-        .sidebar-skills ul {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            font-size: 0.9rem;
-        }
-
-        .sidebar-skills li {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 8px 12px;
-            border-radius: 6px;
-            color: var(--sidebar-text-light);
-        }
-
-        /* SAĞ PANEL (Main Content) */
-        .main-content {
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            gap: 35px;
-        }
-
-        .content-section h2 {
-            color: var(--primary);
-            font-size: 1.3rem;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 8px;
-            margin-bottom: 20px;
-        }
-
-        .content-section p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-
-        .timeline-item {
-            margin-bottom: 20px;
-        }
-
-        .timeline-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-bottom: 5px;
-        }
-
-        .timeline-title {
-            font-weight: 600;
-            font-size: 1.05rem;
-            color: var(--text-main);
-        }
-
-        .timeline-date {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            background: #f1f5f9;
-            padding: 2px 8px;
-            border-radius: 4px;
-        }
-
-        .timeline-content ul {
-            margin-top: 8px;
-            padding-left: 18px;
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-
-        .timeline-content ul li {
-            margin-bottom: 4px;
-        }
-
-        /* RESPONSIVE (Mobil Uyum) */
-        @media (max-width: 768px) {
-            .resume-container {
-                grid-template-columns: 1fr;
-            }
-            .sidebar {
-                padding: 30px 20px;
-            }
-            .main-content {
-                padding: 30px 20px;
-            }
-        }
-    </style>
 </head>
+
 <body>
-
-    <div class="resume-container">
-        <!-- SOL SÜTUN (Sidebar) -->
-        <aside class="sidebar">
-            <div class="profile-info">
-                <h1>Sefer Özbolat</h1>
-                <div class="title-tag">Bulut Bilişim Operatörlüğü</div>
-            </div>
-
-            <div class="sidebar-section">
-                <h3>İletişim</h3>
-                <ul class="contact-list">
-                    <li>📧 <a href="mailto:seferozbolt@gmail.com">seferozbolt@gmail.com</a></li>
-                    <li>💻 <a href="https://github.com/seferozbolat" target="_blank">github.com/seferozbolat</a></li>
-                    <li>🌐 <a href="https://seferozbolat.com.tr" target="_blank">seferozbolat.com.tr</a></li>
-                </ul>
-            </div>
-
-            <div class="sidebar-section sidebar-skills">
-                <h3>Diller</h3>
-                <ul>
-                    <li>İngilizce</li>
-                    <li>Japonca</li>
-                </ul>
-            </div>
-
-            <div class="sidebar-section sidebar-skills">
-                <h3>Yetenekler</h3>
-                <ul>
-                    <li>Python & C#</li>
-                    <li>Sunucu Kurulumları</li>
-                    <li>Bulut Bilişim Operatörlüğü</li>
-                </ul>
-            </div>
-        </aside>
-
-        <!-- SAĞ SÜTUN (Ana İçerik) -->
-        <main class="main-content">
-            <!-- Hakkımda -->
-            <section class="content-section">
-                <h2>Hakkımda</h2>
-                <p>ATÜ (Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi) Bulut Bilişim Operatörlüğü öğrencisiyim. Sunucu kurulumları ve modern teknolojiler alanında kendimi geliştiren, öğrenmeye ve üretmeye tutkulu bir bilişim adayıyım.</p>
-            </section>
-
-            <!-- Deneyim -->
-            <section class="content-section">
-                <h2>Deneyim</h2>
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <span class="timeline-title">Stajyer — Belediye</span>
-                        <span class="timeline-date">1 Ay</span>
+    <!--[if IE]>
+    <p class="browserupgrade">Güncel olmayan bir tarayıcı kullanıyorsunuz. Lütfen deneyiminizi ve güvenliğinizi artırmak için <a href="https://browsehappy.com/">tarayıcınızı güncelleyin</a>.</p>
+  <![endif]-->
+  
+    <!--====== YÜKLENİYOR (PRELOADER) ======-->
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
                     </div>
-                    <div class="timeline-content">
-                        <ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== PRELOADER BİTİŞ ======-->
+
+    <!--====== HEADER BAŞLANGIÇ ======-->
+    <section class="header_area">
+        <div class="header_navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <h3 style="color: #fff; font-weight: 700; margin: 0;">Sefer Özbolat</h3>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="#home">Ana Sayfa<span></span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#about">Hakkımda<span></span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#services">Yetenekler<span></span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#work">Deneyim & Eğitim<span></span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#contact">İletişim<span></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="home" class="header_hero">
+            <ul class="header_social d-none d-lg-block">
+                <li><a href="https://github.com/seferozbolat" target="_blank"><i class="lni lni-github-original"></i></a></li>
+                <li><a href="mailto:seferozbolt@gmail.com"><i class="lni lni-envelope"></i></a></li>
+                <li><a href="https://seferozbolat.com.tr" target="_blank"><i class="lni lni-website"></i></a></li>
+            </ul>
+            <div class="container">
+                <div class="row align-items-center justify-content-center justify-content-lg-between">
+                    <div class="col-lg-6">
+                        <div class="header_hero_content mt-45">
+                            <h5 class="header_sub_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Merhaba, Ben</h5>
+                            <h2 class="header_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">Sefer Özbolat</h2>
+                            <span class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">Bulut Bilişim Operatörlüğü Öğrencisi</span>
+                            <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">ATÜ Bulut Bilişim Operatörlüğü öğrencisiyim. Sunucu kurulumları ve modern teknolojiler alanında kendimi geliştiren, öğrenmeye ve üretmeye tutkulu bir bilişim adayıyım.</p>
+                            <a href="#contact" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.4s">İletişime Geç</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-7">
+                        <div class="header_hero_image mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="1.8s">
+                            <img src="assets/images/hero.png" alt="Sefer Özbolat">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_hero_shape d-none d-lg-block"></div>
+        </div>
+    </section>
+    <!--====== HEADER BİTİŞ ======-->
+
+    <!--====== HAKKIMDA BAŞLANGIÇ ======-->
+    <section id="about" class="about_area pt-70 pb-120">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 col-md-9">
+                    <div class="about_image mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <img src="assets/images/about_hero.png" alt="Hakkımda">
+                        <div class="about_shape"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about_content mt-45 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <div class="section_title">
+                            <h5 class="sub_title">Hakkımda</h5>
+                            <h3 class="main_title">Neden Bulut Bilişim & Sunucu Yönetimi?</h3>
+                            <ul class="line">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <p>Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi (ATÜ) Bulut Bilişim Operatörlüğü bölümünde eğitim alıyorum. Sunucu altyapıları, bulut sistemleri ve yazılım geliştirme alanlarında pratik ve teorik yetkinlik kazanmaya odaklanıyorum.</p>
+
+                        <div class="about_skills pt-15">
+                            <div class="skill_item mt-20">
+                                <div class="skill_header">
+                                    <h6 class="skill_title">Sunucu Kurulumları & Altyapı</h6>
+                                    <div class="skill_percentage">
+                                        <p><span class="counter">90</span>%</p>
+                                    </div>
+                                </div>
+                                <div class="skill_bar">
+                                    <div class="bar_inner">
+                                        <div class="bar progress_line" data-width="90"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill_item mt-20">
+                                <div class="skill_header">
+                                    <h6 class="skill_title">Python & C#</h6>
+                                    <div class="skill_percentage">
+                                        <p><span class="counter">80</span>%</p>
+                                    </div>
+                                </div>
+                                <div class="skill_bar">
+                                    <div class="bar_inner">
+                                        <div class="bar progress_line" data-width="80"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill_item mt-20">
+                                <div class="skill_header">
+                                    <h6 class="skill_title">Bulut Bilişim Operatörlüğü</h6>
+                                    <div class="skill_percentage">
+                                        <p><span class="counter">85</span>%</p>
+                                    </div>
+                                </div>
+                                <div class="skill_bar">
+                                    <div class="bar_inner">
+                                        <div class="bar progress_line" data-width="85"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== HAKKIMDA BİTİŞ ======-->
+
+    <!--====== YETENEKLER & UZMANLIKLAR ======-->
+    <section id="services" class="services_area pt-115 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-30">
+                        <h5 class="sub_title">Uzmanlıklar</h5>
+                        <h3 class="main_title">Neler Yapıyorum?</h3>
+                        <ul class="line">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_service mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <div class="service_icon">
+                            <i class="lni lni-cloudy"></i>
+                        </div>
+                        <div class="service_content">
+                            <h4 class="service_title"><a href="#">Bulut Bilişim</a></h4>
+                            <p>Bulut altyapılarının yönetimi, optimizasyonu ve operational süreçlerin takibi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_service mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <div class="service_icon">
+                            <i class="lni lni-code-alt"></i>
+                        </div>
+                        <div class="service_content">
+                            <h4 class="service_title"><a href="#">Python & C#</a></h4>
+                            <p>Yazılım ve otomasyon süreçlerinde aktif olarak Python ve C# kullanımı.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_service mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                        <div class="service_icon">
+                            <i class="lni lni-network"></i>
+                        </div>
+                        <div class="service_content">
+                            <h4 class="service_title"><a href="#">Sunucu Kurulumları</a></h4>
+                            <p>Yerel ve bulut ortamlarında sunucu kurulum, konfigürasyon ve idaresi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== YETENEKLER BİTİŞ ======-->
+
+    <!--====== DENEYİM VE EĞİTİM BAŞLANGIÇ ======-->
+    <section id="work" class="services_area pt-115 pb-120 gray-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-30">
+                        <h5 class="sub_title">Özgeçmiş</h5>
+                        <h3 class="main_title">Eğitim ve Deneyim</h3>
+                        <ul class="line">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Eğitim Card -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="single_service mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.3s" style="background: #fff; padding: 30px; border-radius: 8px;">
+                        <h4 style="margin-bottom: 15px; color: #2563eb;">🎓 Eğitim</h4>
+                        <h5>Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi (ATÜ)</h5>
+                        <p style="color: #64748b; font-weight: 600;">Bulut Bilişim Operatörlüğü — Devam Ediyor</p>
+                        <hr>
+                        <h6 style="margin-top: 15px; margin-bottom: 10px;">Yabancı Diller:</h6>
+                        <ul style="list-style: disc; padding-left: 20px;">
+                            <li>İngilizce</li>
+                            <li>Japonca</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Deneyim Card -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="single_service mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.5s" style="background: #fff; padding: 30px; border-radius: 8px;">
+                        <h4 style="margin-bottom: 15px; color: #2563eb;">💼 Deneyim</h4>
+                        <h5>Stajyer — Belediye</h5>
+                        <p style="color: #64748b; font-weight: 600;">Süre: 1 Ay</p>
+                        <hr>
+                        <ul style="list-style: disc; padding-left: 20px;">
                             <li>Bilgi işlem ve altyapı süreçlerini gözlemleme ve pratik yapma fırsatı buldum.</li>
                             <li>Kurum içi sistemlerin işleyişine ve teknik destek süreçlerine katkı sağladım.</li>
                         </ul>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
+    <!--====== DENEYİM VE EĞİTİM BİTİŞ ======-->
 
-            <!-- Eğitim -->
-            <section class="content-section">
-                <h2>Eğitim</h2>
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <span class="timeline-title">Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi (ATÜ)</span>
-                        <span class="timeline-date">Devam Ediyor</span>
-                    </div>
-                    <div class="timeline-content">
-                        <p><strong>Bölüm:</strong> Bulut Bilişim Operatörlüğü</p>
+    <!--====== İLETİŞİM / CALL TO ACTION ======-->
+    <section id="contact" class="call_to_action_area">
+        <div class="container">
+            <div class="call_to_action_wrapper wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="call_to_action_box d-md-flex justify-content-between align-items-center">
+                            <div class="call_to_action_content">
+                                <h3 class="action_title">Benimle İletişime Geçin</h3>
+                                <ul class="line">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <p>Proje, iş birliği veya sunucu altyapıları hakkında görüşmek için e-posta gönderebilirsiniz.</p>
+                            </div>
+                            <div class="call_to_action_btn">
+                                <a href="mailto:seferozbolt@gmail.com" class="main-btn">E-POSTA GÖNDER</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </main>
-    </div>
+            </div>
+        </div>
+    </section>
+    <!--====== İLETİŞİM BİTİŞ ======-->
+
+    <!--====== FOOTER BAŞLANGIÇ ======-->
+    <footer id="footer" class="footer_area gray-bg pt-115 pb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer_content text-center">
+                        <h3 style="margin-bottom: 20px;">Sefer Özbolat</h3>
+                        <ul class="footer_social">
+                            <li><a href="https://github.com/seferozbolat" target="_blank"><i class="lni lni-github-original"></i></a></li>
+                            <li><a href="mailto:seferozbolt@gmail.com"><i class="lni lni-envelope"></i></a></li>
+                            <li><a href="https://seferozbolat.com.tr" target="_blank"><i class="lni lni-website"></i></a></li>
+                        </ul>
+                        <span class="email">seferozbolt@gmail.com</span>
+                        <ul class="footer_menu">
+                            <li><a href="#home">Ana Sayfa</a></li>
+                            <li><a href="#about">Hakkımda</a></li>
+                            <li><a href="#services">Yetenekler</a></li>
+                            <li><a href="#work">Deneyim</a></li>
+                            <li><a href="#contact">İletişim</a></li>
+                        </ul>
+                        <p class="credit pt-45">Template Designed and Developed by <a href="https://uideck.com/" rel="nofollow">UIdeck</a>[cite: 2]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--====== FOOTER BİTİŞ ======-->
+
+    <!--====== JavaScript Dosyaları ======-->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
