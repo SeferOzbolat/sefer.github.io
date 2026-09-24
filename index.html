@@ -18,6 +18,27 @@
         a { color: #58a6ff; text-decoration: none; }
         a:hover { text-decoration: underline; }
         ul { list-style-type: '$ '; padding-left: 20px; color: #c9d1d9; }
+        
+        /* Terminal Tarzı İndirme Butonu Stili */
+        .download-btn {
+            display: inline-block;
+            background-color: #21262d;
+            color: #58a6ff;
+            border: 1px solid #30363d;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            margin-top: 5px;
+        }
+        .download-btn:hover {
+            background-color: #30363d;
+            color: #ffffff;
+            border-color: #58a6ff;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -58,6 +79,12 @@
                 <p>Email: <a href="mailto:seferozbolt@gmail.com">seferozbolt@gmail.com</a></p>
                 <p>GitHub: <a href="https://github.com/seferozbolat" target="_blank">github.com/seferozbolat</a></p>
                 <p>Web: <a href="https://seferozbolat.com.tr" target="_blank">seferozbolat.com.tr</a></p>
+            </div>
+
+            <!-- Yeni Eklenen İndirme Komutu -->
+            <p><span class="prompt">sefer@cloud-server:~$</span> <span class="cmd">wget https://seferozbolat.com.tr/cv.pdf</span></p>
+            <div class="text">
+                <a href="cv.pdf" download="Sefer_Ozbolat_CV.pdf" class="download-btn">⬇ CV'yi İndir (PDF)</a>
             </div>
 
             <p><span class="prompt">sefer@cloud-server:~$</span> <span class="cmd">_</span></p>
