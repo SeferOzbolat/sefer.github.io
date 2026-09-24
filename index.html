@@ -1,1 +1,272 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sefer Özbolat - Bulut Bilişim Operatörlüğü CV</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-light: #eff6ff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --bg-body: #f3f4f6;
+            --bg-card: #ffffff;
+            --border-color: #e5e7eb;
+        }
 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e40af, var(--primary));
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .title-tag {
+            font-size: 1.15rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.95rem;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 6px 14px;
+            border-radius: 20px;
+            transition: background 0.2s;
+        }
+
+        .contact-info a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        section:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-item {
+            background: var(--bg-body);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .skill-item strong {
+            display: block;
+            color: var(--text-main);
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+        }
+
+        .skill-item span {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 20px;
+            border-left: 2px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-bottom: 6px;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: var(--text-main);
+        }
+
+        .item-date {
+            color: #6b7280;
+            font-size: 0.85rem;
+            background: var(--bg-body);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        ul {
+            margin-top: 8px;
+            padding-left: 20px;
+            color: var(--text-muted);
+        }
+
+        ul li {
+            margin-bottom: 4px;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                border-radius: 10px;
+            }
+            header {
+                padding: 30px 15px;
+            }
+            .content {
+                padding: 20px 15px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Sefer Özbolat</h1>
+            <div class="title-tag">Bulut Bilişim Operatörlüğü</div>
+            <div class="contact-info">
+                <a href="mailto:seferozbolt@gmail.com">📧 seferozbolt@gmail.com</a>
+                <a href="https://github.com/seferozbolat" target="_blank">💻 GitHub</a>
+                <a href="https://seferozbolat.com.tr" target="_blank">🌐 Web Sitesi</a>
+            </div>
+        </header>
+
+        <div class="content">
+            <!-- Hakkımda -->
+            <section>
+                <h2>Hakkımda</h2>
+                <p>ATÜ (Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi) Bulut Bilişim Operatörlüğü öğrencisiyim. Sunucu kurulumları ve modern teknolojiler alanında kendimi geliştiren, öğrenmeye ve üretmeye tutkulu bir bilişim adayıyım.</p>
+            </section>
+
+            <!-- Teknik Yetenekler & Uzmanlıklar -->
+            <section>
+                <h2>🛠️ Teknik Yetenekler & Uzmanlıklar</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <strong>Programlama Dilleri</strong>
+                        <span>Python, C#</span>
+                    </div>
+                    <div class="skill-item">
+                        <strong>Sistem & Altyapı</strong>
+                        <span>Sunucu Kurulumları, Bulut Bilişim</span>
+                    </div>
+                    <div class="skill-item">
+                        <strong>Yabancı Diller</strong>
+                        <span>İngilizce, Japonca</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Deneyim -->
+            <section>
+                <h2>💼 Deneyim</h2>
+                <div class="timeline-item">
+                    <div class="item-header">
+                        <span class="item-title">Stajyer — Belediye</span>
+                        <span class="item-date">1 Ay</span>
+                    </div>
+                    <ul>
+                        <li>Bilgi işlem ve altyapı süreçlerini gözlemleme ve pratik yapma fırsatı buldum.</li>
+                        <li>Kurum içi sistemlerin işleyişine ve teknik destek süreçlerine katkı sağladım.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Eğitim -->
+            <section>
+                <h2>🎓 Eğitim</h2>
+                <div class="timeline-item">
+                    <div class="item-header">
+                        <span class="item-title">Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi (ATÜ)</span>
+                        <span class="item-date">Devam Ediyor</span>
+                    </div>
+                    <p><strong>Bölüm:</strong> Bulut Bilişim Operatörlüğü</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
