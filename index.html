@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sefer Özbolat - Bulut Bilişim Operatörlüğü CV</title>
+    <title>Sefer Özbolat - Bulut Bilişim Operatörlüğü</title>
     <style>
         :root {
+            --sidebar-bg: #1e293b;
+            --sidebar-text: #94a3b8;
+            --sidebar-text-light: #ffffff;
+            --main-bg: #f8fafc;
+            --card-bg: #ffffff;
             --primary: #2563eb;
-            --primary-light: #eff6ff;
-            --text-main: #1f2937;
-            --text-muted: #4b5563;
-            --bg-body: #f3f4f6;
-            --bg-card: #ffffff;
-            --border-color: #e5e7eb;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
         }
 
         * {
@@ -22,250 +24,238 @@
         }
 
         body {
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            background-color: var(--bg-body);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--main-bg);
             color: var(--text-main);
             line-height: 1.6;
-            padding: 40px 20px;
+            padding: 30px 15px;
         }
 
-        .container {
-            max-width: 800px;
+        .resume-container {
+            max-width: 900px;
             margin: 0 auto;
-            background: var(--bg-card);
-            border-radius: 16px;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            display: grid;
+            grid-template-columns: 320px 1fr;
             overflow: hidden;
         }
 
-        header {
-            background: linear-gradient(135deg, #1e40af, var(--primary));
-            color: white;
-            padding: 40px 30px;
-            text-align: center;
+        /* SOL PANEL (Sidebar) */
+        .sidebar {
+            background-color: var(--sidebar-bg);
+            color: var(--sidebar-text);
+            padding: 40px 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
         }
 
-        header h1 {
-            font-size: 2.4rem;
-            margin-bottom: 8px;
+        .profile-info h1 {
+            color: var(--sidebar-text-light);
+            font-size: 1.8rem;
+            margin-bottom: 5px;
             font-weight: 700;
         }
 
-        .title-tag {
-            font-size: 1.15rem;
-            opacity: 0.9;
-            margin-bottom: 20px;
-            font-weight: 300;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
+        .profile-info .title-tag {
+            color: #38bdf8;
             font-size: 0.95rem;
+            font-weight: 500;
         }
 
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 6px 14px;
-            border-radius: 20px;
-            transition: background 0.2s;
-        }
-
-        .contact-info a:hover {
-            background: rgba(255, 255, 255, 0.2);
-        }
-
-        .content {
-            padding: 40px 30px;
-        }
-
-        section {
-            margin-bottom: 35px;
-        }
-
-        section:last-child {
-            margin-bottom: 0;
-        }
-
-        h2 {
-            font-size: 1.3rem;
-            color: var(--primary);
-            border-bottom: 2px solid var(--primary-light);
+        .sidebar-section h3 {
+            color: var(--sidebar-text-light);
+            font-size: 1.1rem;
+            border-bottom: 2px solid #334155;
             padding-bottom: 8px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .contact-list {
+            list-style: none;
             display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        p {
-            color: var(--text-muted);
-            font-size: 1rem;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 15px;
-        }
-
-        .skill-item {
-            background: var(--bg-body);
-            padding: 15px;
-            border-radius: 10px;
-            border-left: 4px solid var(--primary);
-        }
-
-        .skill-item strong {
-            display: block;
-            color: var(--text-main);
-            margin-bottom: 5px;
-            font-size: 0.95rem;
-        }
-
-        .skill-item span {
-            color: var(--text-muted);
+            flex-direction: column;
+            gap: 12px;
             font-size: 0.9rem;
         }
 
-        .timeline-item {
-            position: relative;
-            padding-left: 20px;
-            border-left: 2px solid var(--border-color);
+        .contact-list li a {
+            color: var(--sidebar-text);
+            text-decoration: none;
+            word-break: break-all;
+            transition: color 0.2s;
+        }
+
+        .contact-list li a:hover {
+            color: var(--sidebar-text-light);
+        }
+
+        .sidebar-skills ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+
+        .sidebar-skills li {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 8px 12px;
+            border-radius: 6px;
+            color: var(--sidebar-text-light);
+        }
+
+        /* SAĞ PANEL (Main Content) */
+        .main-content {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+        }
+
+        .content-section h2 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
             margin-bottom: 20px;
         }
 
-        .timeline-item:last-child {
-            margin-bottom: 0;
+        .content-section p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
         }
 
-        .item-header {
+        .timeline-item {
+            margin-bottom: 20px;
+        }
+
+        .timeline-header {
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
+            align-items: center;
             flex-wrap: wrap;
-            gap: 5px;
-            margin-bottom: 6px;
+            margin-bottom: 5px;
         }
 
-        .item-title {
+        .timeline-title {
             font-weight: 600;
             font-size: 1.05rem;
             color: var(--text-main);
         }
 
-        .item-date {
-            color: #6b7280;
+        .timeline-date {
             font-size: 0.85rem;
-            background: var(--bg-body);
+            color: var(--text-muted);
+            background: #f1f5f9;
             padding: 2px 8px;
             border-radius: 4px;
         }
 
-        ul {
+        .timeline-content ul {
             margin-top: 8px;
-            padding-left: 20px;
+            padding-left: 18px;
             color: var(--text-muted);
-        }
-
-        ul li {
-            margin-bottom: 4px;
             font-size: 0.95rem;
         }
 
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
+        .timeline-content ul li {
+            margin-bottom: 4px;
+        }
+
+        /* RESPONSIVE (Mobil Uyum) */
+        @media (max-width: 768px) {
+            .resume-container {
+                grid-template-columns: 1fr;
             }
-            .container {
-                border-radius: 10px;
+            .sidebar {
+                padding: 30px 20px;
             }
-            header {
-                padding: 30px 15px;
-            }
-            .content {
-                padding: 20px 15px;
-            }
-            header h1 {
-                font-size: 2rem;
+            .main-content {
+                padding: 30px 20px;
             }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <!-- Header -->
-        <header>
-            <h1>Sefer Özbolat</h1>
-            <div class="title-tag">Bulut Bilişim Operatörlüğü</div>
-            <div class="contact-info">
-                <a href="mailto:seferozbolt@gmail.com">📧 seferozbolt@gmail.com</a>
-                <a href="https://github.com/seferozbolat" target="_blank">💻 GitHub</a>
-                <a href="https://seferozbolat.com.tr" target="_blank">🌐 Web Sitesi</a>
+    <div class="resume-container">
+        <!-- SOL SÜTUN (Sidebar) -->
+        <aside class="sidebar">
+            <div class="profile-info">
+                <h1>Sefer Özbolat</h1>
+                <div class="title-tag">Bulut Bilişim Operatörlüğü</div>
             </div>
-        </header>
 
-        <div class="content">
+            <div class="sidebar-section">
+                <h3>İletişim</h3>
+                <ul class="contact-list">
+                    <li>📧 <a href="mailto:seferozbolt@gmail.com">seferozbolt@gmail.com</a></li>
+                    <li>💻 <a href="https://github.com/seferozbolat" target="_blank">github.com/seferozbolat</a></li>
+                    <li>🌐 <a href="https://seferozbolat.com.tr" target="_blank">seferozbolat.com.tr</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section sidebar-skills">
+                <h3>Diller</h3>
+                <ul>
+                    <li>İngilizce</li>
+                    <li>Japonca</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section sidebar-skills">
+                <h3>Yetenekler</h3>
+                <ul>
+                    <li>Python & C#</li>
+                    <li>Sunucu Kurulumları</li>
+                    <li>Bulut Bilişim Operatörlüğü</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- SAĞ SÜTUN (Ana İçerik) -->
+        <main class="main-content">
             <!-- Hakkımda -->
-            <section>
+            <section class="content-section">
                 <h2>Hakkımda</h2>
                 <p>ATÜ (Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi) Bulut Bilişim Operatörlüğü öğrencisiyim. Sunucu kurulumları ve modern teknolojiler alanında kendimi geliştiren, öğrenmeye ve üretmeye tutkulu bir bilişim adayıyım.</p>
             </section>
 
-            <!-- Teknik Yetenekler & Uzmanlıklar -->
-            <section>
-                <h2>🛠️ Teknik Yetenekler & Uzmanlıklar</h2>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <strong>Programlama Dilleri</strong>
-                        <span>Python, C#</span>
-                    </div>
-                    <div class="skill-item">
-                        <strong>Sistem & Altyapı</strong>
-                        <span>Sunucu Kurulumları, Bulut Bilişim</span>
-                    </div>
-                    <div class="skill-item">
-                        <strong>Yabancı Diller</strong>
-                        <span>İngilizce, Japonca</span>
-                    </div>
-                </div>
-            </section>
-
             <!-- Deneyim -->
-            <section>
-                <h2>💼 Deneyim</h2>
+            <section class="content-section">
+                <h2>Deneyim</h2>
                 <div class="timeline-item">
-                    <div class="item-header">
-                        <span class="item-title">Stajyer — Belediye</span>
-                        <span class="item-date">1 Ay</span>
+                    <div class="timeline-header">
+                        <span class="timeline-title">Stajyer — Belediye</span>
+                        <span class="timeline-date">1 Ay</span>
                     </div>
-                    <ul>
-                        <li>Bilgi işlem ve altyapı süreçlerini gözlemleme ve pratik yapma fırsatı buldum.</li>
-                        <li>Kurum içi sistemlerin işleyişine ve teknik destek süreçlerine katkı sağladım.</li>
-                    </ul>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Bilgi işlem ve altyapı süreçlerini gözlemleme ve pratik yapma fırsatı buldum.</li>
+                            <li>Kurum içi sistemlerin işleyişine ve teknik destek süreçlerine katkı sağladım.</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
             <!-- Eğitim -->
-            <section>
-                <h2>🎓 Eğitim</h2>
+            <section class="content-section">
+                <h2>Eğitim</h2>
                 <div class="timeline-item">
-                    <div class="item-header">
-                        <span class="item-title">Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi (ATÜ)</span>
-                        <span class="item-date">Devam Ediyor</span>
+                    <div class="timeline-header">
+                        <span class="timeline-title">Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi (ATÜ)</span>
+                        <span class="timeline-date">Devam Ediyor</span>
                     </div>
-                    <p><strong>Bölüm:</strong> Bulut Bilişim Operatörlüğü</p>
+                    <div class="timeline-content">
+                        <p><strong>Bölüm:</strong> Bulut Bilişim Operatörlüğü</p>
+                    </div>
                 </div>
             </section>
-        </div>
+        </main>
     </div>
 
 </body>
