@@ -1,11 +1,13 @@
-<!DOCTYPE html><html class="scroll-smooth dark" lang="tr"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<!DOCTYPE html>
+
+<html class="scroll-smooth dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Sefer Özbolat — Bulut Bilişim &amp; Altyapı Mimarı</title>
 <!-- Fonts: Space Grotesk & JetBrains Mono -->
-<link href="https://fonts.googleapis.com" rel="preconnect">
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <!-- Tailwind CSS v3 -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <!-- Tailwind Configuration -->
@@ -69,7 +71,7 @@
 <!-- Toast Notification System -->
 <div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none bg-slate-900 dark:bg-zinc-900 text-white px-5 py-3.5 rounded-2xl shadow-2xl border border-slate-700 dark:border-zinc-700 flex items-center gap-3 font-mono text-xs" id="toast">
 <span class="w-2.5 h-2.5 rounded-full bg-[#38bdf8] animate-ping"></span>
-<span id="toast-message" class="">Bildirim iletildi.</span>
+<span class="" id="toast-message">Bildirim iletildi.</span>
 </div>
 <!-- Main Canvas Container -->
 <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10">
@@ -78,7 +80,7 @@
 <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
 <!-- Monogram Logo -->
 <div class="flex items-center space-x-3.5">
-<div class="w-10 h-10 rounded-full flex items-center justify-center p-0.5 border border-sky-400/40 shadow-sm shadow-sky-400/20 bg-dark-base"><img src="https://lh3.googleusercontent.com/aida/AEtjO1WEApxvo83sE6Gqa98bidx_XGM7CkN9b75R1kG5dl7XhraCYb9FkVlHvBrmgv5H85EuiIULlh__47KCpa9i_2EnXBmC5s9CSl6-49gcYpv_7-mmIJgU8xeP72W0izU2OjvqG5EbHlpRHTBNOeUSsRMkGefi-c7O5wRmIA9BEI8WCL5V_A9rVO6LYUgcry0pFwAVfULF3u_2oXNutIYnf_XuKHMrAfjBeMGidDtATyzQKg" alt="Sefer Özbolat Logo" class="w-full h-full rounded-full object-contain"></div>
+<div class="w-10 h-10 rounded-full flex items-center justify-center p-0.5 border border-sky-400/40 shadow-sm shadow-sky-400/20 bg-dark-base"><img alt="Sefer Özbolat Logo" class="w-full h-full rounded-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WEApxvo83sE6Gqa98bidx_XGM7CkN9b75R1kG5dl7XhraCYb9FkVlHvBrmgv5H85EuiIULlh__47KCpa9i_2EnXBmC5s9CSl6-49gcYpv_7-mmIJgU8xeP72W0izU2OjvqG5EbHlpRHTBNOeUSsRMkGefi-c7O5wRmIA9BEI8WCL5V_A9rVO6LYUgcry0pFwAVfULF3u_2oXNutIYnf_XuKHMrAfjBeMGidDtATyzQKg"/></div>
 <div class="flex flex-col">
 <span class="text-xs uppercase font-mono tracking-widest text-slate-500 dark:text-accent-muted">Düğüm / Adana, TR</span>
 <div class="flex items-center gap-2">
@@ -92,11 +94,11 @@
 <!-- Theme Toggle Button -->
 <button aria-label="Temayı Değiştir" class="inline-flex items-center gap-2 px-4 py-2 border border-slate-300 dark:border-dark-border hover:border-sky-500 dark:hover:border-zinc-400 bg-white dark:bg-dark-surface text-slate-700 dark:text-zinc-300 hover:text-black dark:hover:text-white font-mono text-xs tracking-wider transition-all shadow-sm rounded-full cursor-pointer" id="theme-toggle" onclick="toggleTheme()" type="button">
 <!-- Moon Icon (Visible in Dark Mode) -->
-<svg class="w-3.5 h-3.5 text-[#38bdf8]" fill="none" id="theme-moon-icon" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+<svg class="w-3.5 h-3.5 text-[#38bdf8]" fill="none" id="theme-moon-icon" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
 <path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
 <!-- Sun Icon (Visible in Light Mode) -->
-<svg class="w-3.5 h-3.5 hidden text-amber-500" fill="none" id="theme-sun-icon" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+<svg class="w-3.5 h-3.5 hidden text-amber-500" fill="none" id="theme-sun-icon" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
 <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
 <span class="font-bold uppercase tracking-wider" id="theme-toggle-label">KOYU</span>
@@ -134,7 +136,7 @@
 <div class="space-y-2">
 <span class="font-mono text-xs tracking-widest text-slate-500 dark:text-accent-muted uppercase block">[ PORTFOLYO &amp; TEKNİK DOSYA ]</span>
 <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tighter text-slate-900 dark:text-white leading-none">
-                BULUT ALTYAPISI <br>
+                BULUT ALTYAPISI <br/>
 <span class="text-[#0284c7] dark:text-[#38bdf8]">&amp; SİSTEM MİMARİSİ.</span>
 </h2>
 </div>
@@ -147,10 +149,10 @@
 <span class="">Keşfetmeye Başla</span>
 <span class="">↓</span>
 </button>
-<button class="inline-flex items-center gap-2 bg-slate-100 dark:bg-dark-card text-slate-800 dark:text-zinc-200 hover:text-[#0284c7] dark:hover:text-white border border-slate-300 dark:border-dark-border hover:border-[#0284c7] dark:hover:border-[#38bdf8] px-5 py-2.5 rounded-full transition-all duration-200 cursor-pointer active:scale-95" onclick="downloadCV()">
+<a class="inline-flex items-center gap-2 bg-slate-100 dark:bg-dark-card text-slate-800 dark:text-zinc-200 hover:text-[#0284c7] dark:hover:text-white border border-slate-300 dark:border-dark-border hover:border-[#0284c7] dark:hover:border-[#38bdf8] px-5 py-2.5 rounded-full transition-all duration-200 cursor-pointer active:scale-95" download="cv.pdf" href="https://raw.githubusercontent.com/SeferOzbolat/SeferOzbolat/main/cv.pdf" onclick="showToast('Özgeçmiş (CV) GitHub üzerinden indiriliyor...')" rel="noopener noreferrer" target="_blank">
 <span class="">Özgeçmiş İndir (CV)</span>
 <span class="">↗</span>
-</button>
+</a>
 <a class="inline-flex items-center gap-2 bg-slate-100 dark:bg-dark-card text-slate-700 dark:text-zinc-300 hover:text-[#0284c7] dark:hover:text-[#38bdf8] border border-slate-300 dark:border-dark-border hover:border-[#0284c7] dark:hover:border-[#38bdf8] px-5 py-2.5 rounded-full transition-all duration-200" href="mailto:seferozbolt@gmail.com">
 <span class="">İletişime Geç</span>
 <span class="">↗</span>
@@ -229,7 +231,7 @@
 <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-slate-950 dark:bg-dark-card border border-slate-800 dark:border-dark-border/80 flex items-center justify-center p-6 dot-pattern">
 <div class="text-center relative z-10 max-w-md">
 <div class="inline-block p-4 rounded-2xl bg-black/80 border border-slate-800 dark:border-dark-border mb-4 backdrop-blur-sm shadow-[0_0_20px_rgba(56,189,248,0.15)]">
-<svg class="w-12 h-12 text-[#38bdf8] mx-auto mb-2 drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<svg class="w-12 h-12 text-[#38bdf8] mx-auto mb-2 drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
 <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
 </svg>
 <div class="font-mono text-xs text-zinc-400">SERVER CLUSTER STATUS</div>
@@ -260,14 +262,14 @@
 <!-- High-Contrast Action Menu List -->
 <div class="space-y-3 font-mono">
 <!-- Action 1: CV -->
-<button class="w-full text-left group flex items-center justify-between p-3.5 bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border hover:border-[#0284c7] dark:hover:border-[#38bdf8] rounded-xl transition-all duration-200 hover:-translate-y-0.5 cursor-pointer" onclick="downloadCV()">
+<a class="w-full text-left group flex items-center justify-between p-3.5 bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border hover:border-[#0284c7] dark:hover:border-[#38bdf8] rounded-xl transition-all duration-200 hover:-translate-y-0.5 cursor-pointer" download="cv.pdf" href="https://raw.githubusercontent.com/SeferOzbolat/SeferOzbolat/main/cv.pdf" onclick="showToast('Özgeçmiş (CV) GitHub üzerinden indiriliyor...')" rel="noopener noreferrer" target="_blank">
 <span class="text-sm font-semibold tracking-wide text-slate-800 dark:text-zinc-200 group-hover:text-[#0284c7] dark:group-hover:text-white">
                   Özgeçmiş (CV)
                 </span>
 <span class="bg-slate-900 dark:bg-white text-white dark:text-black group-hover:bg-[#0284c7] dark:group-hover:bg-[#38bdf8] group-hover:text-white dark:group-hover:text-black px-3.5 py-1.5 rounded-lg text-xs font-bold tracking-wider flex items-center gap-1 transition-colors shadow-sm">
                   İndir (PDF) ↗
                 </span>
-</button>
+</a>
 <!-- Action 2: GitHub -->
 <a class="group flex items-center justify-between p-3.5 bg-slate-50 dark:bg-dark-card border border-slate-200 dark:border-dark-border hover:border-[#0284c7] dark:hover:border-[#38bdf8] rounded-xl transition-all duration-200 hover:-translate-y-0.5" href="https://github.com/SeferOzbolat" rel="noopener noreferrer" target="_blank">
 <span class="text-sm font-semibold tracking-wide text-slate-800 dark:text-zinc-200 group-hover:text-[#0284c7] dark:group-hover:text-white">
@@ -472,7 +474,7 @@
             İletişim &amp; İş Birliği
           </span>
 <h2 class="text-3xl sm:text-5xl font-black uppercase tracking-tight text-slate-900 dark:text-white">
-            Yeni Projeler İçin <br>
+            Yeni Projeler İçin <br/>
             Bağlantı Kurun.
           </h2>
 </div>
@@ -489,7 +491,7 @@
           © 2026 Sefer Özbolat. Tüm hakları saklıdır.
         </div>
 <div class="flex items-center space-x-6">
-<a class="hover:text-[#0284c7] dark:hover:text-[#38bdf8] transition-colors" href="https://github.com/SeferOzbolat" rel="noopener noreferrer" target="_blank" style="opacity: 0;">github.com/SeferOzbolat</a>
+<a class="hover:text-[#0284c7] dark:hover:text-[#38bdf8] transition-colors" href="https://github.com/SeferOzbolat" rel="noopener noreferrer" style="opacity: 0;" target="_blank">github.com/SeferOzbolat</a>
 <span class="">•</span>
 <span class="text-slate-600 dark:text-zinc-400">Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi</span>
 </div>
@@ -521,41 +523,18 @@
       }
     }
 
-    // Dynamic CV Download Simulation & File Generator
+    // Direct CV PDF Download from GitHub Repository
     function downloadCV() {
-      showToast("Özgeçmiş (CV) hazırlanıyor ve indiriliyor...");
-      
-      const cvText = `SEFER ÖZBOLAT — BULUT BİLİŞİM & ALTYAPI MİMARI
-======================================================
-E-posta: seferozbolt@gmail.com
-Lokasyon: Adana, Türkiye
-Eğitim: Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi (ATÜ)
-Bölüm: Bulut Bilişim Operatörlüğü
-
-YETKİNLİKLER:
-- Linux & CLI: AlmaLinux, Ubuntu Server LTS, Debian, RedHat
-- Sanallaştırma & Konteyner: Docker, Proxmox VE, KVM, NGINX
-- Ağ & Güvenlik: TCP/IP, DNS, DHCP, VLAN Segmentasyonu, Routing, Firewall
-- Yazılım: Python, C#, Bash Scripting
-
-DENEYİM:
-- Bilgi İşlem ve Ağ Stajyeri | Belediye Bilgi İşlem Daire Başkanlığı
-  * Switch, router ve patch panel yapılandırması
-  * Active Directory domain ve donanım destek operasyonları
-  * Sunucu odası altyapı ve yedekleme denetimi
-
-GitHub: https://github.com/seferozbolt
-LinkedIn: https://linkedin.com/in/seferozbolt
-`;
-      const blob = new Blob([cvText], { type: 'text/plain;charset=utf-8' });
-      const url = URL.createObjectURL(blob);
+      showToast("Özgeçmiş (CV) GitHub üzerinden indiriliyor...");
+      const pdfUrl = 'https://raw.githubusercontent.com/SeferOzbolat/SeferOzbolat/main/cv.pdf';
       const link = document.createElement('a');
-      link.href = url;
-      link.download = 'Sefer_Ozbolat_CV.txt';
+      link.href = pdfUrl;
+      link.download = 'cv.pdf';
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-      URL.revokeObjectURL(url);
     }
 
     // Theme Management
@@ -595,6 +574,4 @@ LinkedIn: https://linkedin.com/in/seferozbolt
       }
     })();
   </script>
-
-
 </body></html>
