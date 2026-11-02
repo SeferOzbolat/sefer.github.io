@@ -1,453 +1,524 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="tr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed":"#2d1600","surface-container":"#1c2023","secondary-fixed":"#6ffbbe","background":"#101417","on-error-container":"#ffdad6","on-error":"#690005","on-secondary-fixed":"#002113","inverse-primary":"#00687a","on-secondary-fixed-variant":"#005236","primary-fixed-dim":"#4cd7f6","on-surface-variant":"#bcc9cd","surface-container-highest":"#313539","on-tertiary":"#4b2800","on-primary-container":"#00424f","tertiary-container":"#e89337","error-container":"#93000a","on-secondary-container":"#00311f","secondary":"#4edea3","primary-container":"#06b6d4","on-primary-fixed":"#001f26","primary":"#4cd7f6","surface-container-high":"#262a2e","error":"#ffb4ab","surface-bright":"#363a3d","surface":"#101417","outline":"#869397","surface-dim":"#101417","outline-variant":"#3d494c","on-tertiary-container":"#5b3200","tertiary":"#ffb873","surface-container-low":"#181c1f","on-secondary":"#003824","on-primary":"#003640","inverse-surface":"#e0e3e7","surface-container-lowest":"#0b0f12","inverse-on-surface":"#2d3134","on-primary-fixed-variant":"#004e5c","primary-fixed":"#acedff","secondary-container":"#00a572","on-background":"#e0e3e7","tertiary-fixed-dim":"#ffb873","on-surface":"#e0e3e7","tertiary-fixed":"#ffdcbf","surface-tint":"#4cd7f6","surface-variant":"#313539","on-tertiary-fixed-variant":"#6a3b00","secondary-fixed-dim":"#4edea3"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-lg":"1.5rem","gutter":"1.25rem","gutter-lg":"1.5rem","gutter-sm":"0.75rem","space-md":"1rem","space-sm":"0.5rem","space-xl":"2.5rem","margin-desktop":"2.5rem","margin":"1.5rem","space-xs":"0.25rem","margin-mobile":"1rem"},"fontFamily":{"code-snippet":["JetBrains Mono"],"body-md":["Inter"],"display-hero":["Geist"],"display-hero-mobile":["Geist"],"body-sm":["Inter"],"headline-sm":["Geist"],"headline-lg":["Geist"],"badge-label":["JetBrains Mono"],"headline-lg-mobile":["Geist"],"body-lg":["Inter"],"headline-md":["Geist"]},"fontSize":{"code-snippet":["13px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"400"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.04em","fontWeight":"600"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.03em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.015em","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.025em","fontWeight":"600"}],"badge-label":["11px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"500"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.02em","fontWeight":"500"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md border-b border-outline-variant/30"><div class="h-16 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm group" data-path="hakkimda" href="#"><div class="h-9 w-9 rounded-lg bg-surface-container-highest border border-primary/40 flex items-center justify-center font-code-snippet text-code-snippet font-bold text-primary shadow-[0_0_12px_-2px_rgba(76,215,246,0.3)] group-hover:border-primary transition-colors">SÖ</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface leading-tight">Sefer Özbolat</span><span class="hidden sm:inline-flex items-center self-start font-badge-label text-badge-label uppercase px-space-xs py-0.5 rounded bg-surface-container-high border border-outline-variant text-on-surface-variant">Cloud & DevOps</span></div></a></div><nav class="hidden md:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-medium rounded-lg"><a class="px-space-sm py-1.5 font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="hakkimda" href="#">Hakkımda</a><a class="px-space-sm py-1.5 font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="yetenekler" href="#">Yetenekler</a><a class="px-space-sm py-1.5 font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="deneyim" href="#">Deneyim</a><a class="px-space-sm py-1.5 font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="iletisim" href="#">İletişim</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center gap-space-xs px-space-md h-[38px] rounded-lg bg-surface-container border border-primary/40 font-body-md text-body-md text-primary shadow-[0_0_16px_-4px_rgba(76,215,246,0.25)] hover:border-primary hover:bg-surface-container-high hover:text-primary transition-all" download="" href="./cv.pdf"><span class="material-symbols-outlined text-[18px]">download</span><span>CV İndir</span></a><a class="inline-flex items-center px-space-md h-[38px] rounded-lg bg-primary font-body-md text-body-md font-medium text-on-primary hover:bg-primary-fixed shadow-[0_0_20px_-5px_rgba(6,182,212,0.35)] transition-all" href="mailto:seferozbolt@gmail.com">Bana Ulaşın</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full">
-<!-- Interactive Ambient Lighting Backdrops -->
-<div class="relative w-full max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop py-space-xl">
-<div class="absolute top-10 left-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-[120px] pointer-events-none -z-10"></div>
-<div class="absolute top-80 right-10 w-80 h-80 bg-secondary/10 rounded-full blur-[100px] pointer-events-none -z-10"></div>
-<!-- 1. HERO SECTION & PROMINENT PROFILE BENTO -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-gutter-lg">
-<!-- Main Profile & Bio (Col 8) -->
-<div class="lg:col-span-8 flex flex-col justify-between p-space-lg bg-surface-container-lowest rounded-xl shadow-xl transition-all duration-300 relative overflow-hidden group">
-<div class="absolute top-0 right-0 w-48 h-48 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
-<div>
-<!-- Status Pill Bar -->
-<div class="flex flex-wrap items-center gap-space-sm mb-space-md">
-<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-low">
-<span class="relative flex h-2 w-2">
-<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
-<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary shadow-[0_0_8px_rgba(78,222,163,0.8)]"></span>
-</span>
-<span class="font-badge-label text-badge-label uppercase text-secondary font-medium tracking-wider">Açık Pozisyonlar ve Staj İçin Uygun</span>
-</div>
-<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-low text-on-surface-variant font-code-snippet text-body-sm">
-<span class="material-symbols-outlined text-[15px] text-primary">location_on</span>
-<span>Adana, Türkiye</span>
-</div>
-<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-low text-on-surface-variant font-code-snippet text-body-sm">
-<span class="material-symbols-outlined text-[15px] text-secondary">verified</span>
-<span>Bulut Operatörü</span>
-</div>
-</div>
-<!-- Hero Name & Subtitle -->
-<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero tracking-tight text-on-surface mb-space-xs">
-            Sefer <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-fixed-dim to-secondary drop-shadow-[0_0_25px_rgba(76,215,246,0.25)]">Özbolat</span>
-</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed mb-space-lg">
-            Bulut Bilişim Operatörlüğü Öğrencisi <span class="text-on-surface font-medium">@ Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi (ATÜ)</span>. 
-            Modern altyapı otomasyonu, Linux sunucu orkestrasyonu ve güvenli bulut mimarileri inşa etmeye odaklı geleceğin sistem mühendisi.
-          </p>
-</div>
-<!-- Call to Action Buttons -->
-<div class="flex flex-wrap items-center gap-space-sm pt-space-md mt-auto">
-<a class="inline-flex items-center gap-space-sm px-space-lg h-[44px] rounded-lg bg-secondary text-on-secondary font-body-md font-semibold hover:bg-secondary-fixed transition-all duration-200 shadow-[0_0_24px_-4px_rgba(78,222,163,0.45)] group/btn" download="" href="./cv.pdf">
-<span class="material-symbols-outlined text-[20px] transition-transform group-hover/btn:-translate-y-0.5">download</span>
-<span>CV İndir (PDF)</span>
-</a>
-<a class="inline-flex items-center gap-space-xs px-space-lg h-[44px] rounded-lg bg-surface-container-high text-on-surface font-body-md font-medium hover:bg-surface-container-highest transition-all duration-200" href="#iletisim">
-<span class="material-symbols-outlined text-[18px] text-primary">send</span>
-<span>Bana Ulaşın</span>
-</a>
-<a class="inline-flex items-center gap-space-xs px-space-md h-[44px] rounded-lg bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all" href="https://github.com/seferozbolat" rel="noreferrer" target="_blank">
-<span class="font-code-snippet text-code-snippet font-semibold">GitHub →</span>
-</a>
-</div>
-</div>
-<!-- Quick Telemetry & Status Node (Col 4) -->
-<div class="lg:col-span-4 flex flex-col justify-between p-space-lg bg-surface-container-lowest rounded-xl shadow-xl transition-all duration-300 relative">
-<div class="flex items-center justify-between pb-space-sm mb-space-sm">
-<div class="flex items-center gap-space-xs">
-<span class="material-symbols-outlined text-primary text-[20px]">terminal</span>
-<span class="font-code-snippet text-code-snippet text-on-surface font-medium">NODE TELEMETRY</span>
-</div>
-<span class="inline-flex items-center px-space-xs py-0.5 rounded bg-surface-container font-code-snippet text-[11px] text-secondary">
-            v2.4.0-cloud
-          </span>
-</div>
-<!-- Server Metric Simulation Visual -->
-<div class="space-y-space-sm my-space-xs font-code-snippet text-body-sm">
-<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1">
-<div class="flex justify-between text-on-surface-variant text-[12px]">
-<span>ALTYAPI DURUMU</span>
-<span class="text-secondary font-medium">100% ÇALIŞIR</span>
-</div>
-<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-1">
-<div class="bg-gradient-to-r from-primary to-secondary h-full rounded-full w-[94%]"></div>
-</div>
-</div>
-<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1">
-<div class="flex justify-between text-on-surface-variant text-[12px]">
-<span>İŞLETİM SİSTEMLERİ</span>
-<span class="text-primary font-medium">Debian / Ubuntu / RHEL</span>
-</div>
-<div class="flex items-center gap-2 mt-1">
-<span class="px-2 py-0.5 text-[11px] rounded bg-surface-container-highest text-on-surface">Kernel 6.8+</span>
-<span class="px-2 py-0.5 text-[11px] rounded bg-surface-container-highest text-on-surface">systemd</span>
-<span class="px-2 py-0.5 text-[11px] rounded bg-surface-container-highest text-on-surface">SSH Hardened</span>
-</div>
-</div>
-</div>
-<!-- Quick Access Contacts -->
-<div class="pt-space-sm space-y-space-xs">
-<a class="flex items-center justify-between p-space-xs px-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors text-on-surface-variant hover:text-on-surface group" href="mailto:seferozbolt@gmail.com">
-<div class="flex items-center gap-space-sm">
-<span class="material-symbols-outlined text-[18px] text-primary">mail</span>
-<span class="font-code-snippet text-body-sm">seferozbolt@gmail.com</span>
-</div>
-<span class="material-symbols-outlined text-[16px] opacity-40 group-hover:opacity-100 transition-opacity">north_east</span>
-</a>
-<a class="flex items-center justify-between p-space-xs px-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors text-on-surface-variant hover:text-on-surface group" href="https://github.com/seferozbolat" rel="noreferrer" target="_blank">
-<div class="flex items-center gap-space-sm">
-<span class="material-symbols-outlined text-[18px] text-secondary">code</span>
-<span class="font-code-snippet text-body-sm">github.com/seferozbolat</span>
-</div>
-<span class="material-symbols-outlined text-[16px] opacity-40 group-hover:opacity-100 transition-opacity">north_east</span>
-</a>
-<a class="flex items-center justify-between p-space-xs px-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors text-on-surface-variant hover:text-on-surface group" href="https://seferozbolat.com.tr" rel="noreferrer" target="_blank">
-<div class="flex items-center gap-space-sm">
-<span class="material-symbols-outlined text-[18px] text-tertiary">language</span>
-<span class="font-code-snippet text-body-sm">seferozbolat.com.tr</span>
-</div>
-<span class="material-symbols-outlined text-[16px] opacity-40 group-hover:opacity-100 transition-opacity">north_east</span>
-</a>
-</div>
-</div>
-</div>
-<!-- 2. BENTO GRID ARCHITECTURE (Hakkımda, Beceriler, Deneyim) -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-gutter-lg">
-<!-- Bento Card 1: HAKKIMDA & CLI TERMINAL (Col 7) -->
-<div class="lg:col-span-7 flex flex-col justify-between p-space-lg bg-surface-container-lowest rounded-xl shadow-xl transition-all duration-300" id="hakkimda">
-<div>
-<div class="flex items-center justify-between mb-space-md">
-<div class="flex items-center gap-space-sm">
-<span class="w-2.5 h-2.5 rounded-full bg-primary shadow-[0_0_8px_rgba(76,215,246,0.6)]"></span>
-<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold uppercase tracking-wider">Hakkımda</h2>
-</div>
-<span class="font-code-snippet text-[11px] text-on-surface-variant">/dev/profile</span>
-</div>
-<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-space-md">
-            “ATÜ Bulut Bilişim Operatörlüğü öğrencisiyim. Sunucu kurulumları ve modern teknolojiler alanında kendimi geliştiren, öğrenmeye ve üretmeye tutkulu bir bilişim adayıyım.”
-          </p>
-<!-- Terminal Emulation Module -->
-<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-inner font-code-snippet text-code-snippet">
-<!-- Terminal Titlebar -->
-<div class="bg-surface-container-low px-space-md py-2 flex items-center justify-between text-on-surface-variant">
+<html class="scroll-smooth dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sefer Özbolat — Bulut Bilişim &amp; Altyapı Mimarı</title>
+<!-- Fonts: Space Grotesk & JetBrains Mono for High-End Editorial Brutalism -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Forms & Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Space Grotesk"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            dark: {
+              base: '#090a0c',
+              surface: '#111317',
+              card: '#16191f',
+              border: '#262a35',
+              subtle: '#3b4252'
+            },
+            accent: {
+              lime: '#d4ff3f',
+              silver: '#e2e4e9',
+              muted: '#8b949e'
+            }
+          },
+          letterSpacing: {
+            widest: '.2em',
+            tighter: '-.05em'
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles: Halftone, Dot-Matrix & Editorial Borders & Theme Switching -->
+<style data-purpose="custom-textures">
+    .dot-pattern {
+      background-image: radial-gradient(rgba(56, 189, 248, 0.18) 1px, transparent 1px);
+      background-size: 16px 16px;
+    }
+    .grid-lines {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+    html:not(.dark) .grid-lines {
+      background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    }
+    html:not(.dark) .dot-pattern {
+      background-image: radial-gradient(rgba(2, 132, 199, 0.16) 1px, transparent 1px);
+    }
+    .outline-text {
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.25);
+      color: transparent;
+    }
+    .outline-text-hover:hover {
+      -webkit-text-stroke: 1px #38bdf8;
+      color: transparent;
+    }
+    * {
+      transition-property: background-color, border-color, color, fill, stroke;
+      transition-duration: 200ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  </style>
+</head>
+<body class="bg-dark-base dark:bg-dark-base bg-[#f6f7f9] text-zinc-100 dark:text-zinc-100 text-zinc-900 font-sans selection:bg-[#38bdf8] selection:text-black antialiased relative min-h-screen">
+<!-- Background Grid Texture -->
+<div class="fixed inset-0 grid-lines pointer-events-none z-0"></div>
+<!-- Main Canvas Container -->
+<div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10">
+<!-- BEGIN: TopNavigation -->
+<header class="border-b border-dark-border dark:border-dark-border border-zinc-200 pb-6 mb-8 md:mb-12"><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<!-- Monogram Logo Inspired by Dr. Kaelen Valerius & Avant-Garde Olivia Bennet -->
+<div class="flex items-center space-x-4">
+<img alt="Sefer Özbolat Logo" class="w-10 h-10 rounded-full object-contain border border-sky-400/40 shadow-sm shadow-sky-400/20" src="https://lh3.googleusercontent.com/aida/AEtjO1WEApxvo83sE6Gqa98bidx_XGM7CkN9b75R1kG5dl7XhraCYb9FkVlHvBrmgv5H85EuiIULlh__47KCpa9i_2EnXBmC5s9CSl6-49gcYpv_7-mmIJgU8xeP72W0izU2OjvqG5EbHlpRHTBNOeUSsRMkGefi-c7O5wRmIA9BEI8WCL5V_A9rVO6LYUgcry0pFwAVfULF3u_2oXNutIYnf_XuKHMrAfjBeMGidDtATyzQKg"/>
+<div class="flex flex-col">
+<span class="text-xs uppercase font-mono tracking-widest text-accent-muted dark:text-accent-muted text-zinc-500">Düğüm / Adana, TR</span>
 <div class="flex items-center gap-2">
-<span class="w-3 h-3 rounded-full bg-error/80 inline-block"></span>
-<span class="w-3 h-3 rounded-full bg-tertiary/80 inline-block"></span>
-<span class="w-3 h-3 rounded-full bg-secondary/80 inline-block"></span>
-<span class="ml-2 text-body-sm text-on-surface font-medium">bash - sefer@atü-cloud:~</span>
+<span class="w-2 h-2 rounded-full bg-[#0284c7] dark:bg-[#38bdf8] shadow-[0_0_8px_#38bdf8] animate-pulse"></span>
+<span class="text-sm font-semibold text-accent-silver dark:text-accent-silver text-zinc-800 tracking-tight">Sistem Aktif &amp; Dinlemede</span>
 </div>
-<span class="text-[11px] text-on-surface-variant">UTF-8</span>
 </div>
-<!-- Terminal Screen Body -->
-<div class="p-space-md space-y-2 text-on-surface-variant select-all">
+</div>
+<!-- Meta Navigation, Theme Toggle & CTA Pill -->
+<div class="flex items-center gap-3">
+<!-- Theme Toggle Button -->
+<button aria-label="Temayı Değiştir" class="inline-flex items-center gap-2 px-4 py-1.5 border border-dark-border dark:border-dark-border border-zinc-300 hover:border-zinc-500 dark:hover:border-zinc-400 bg-white/80 dark:bg-dark-surface/90 text-zinc-700 dark:text-zinc-300 hover:text-black dark:hover:text-white font-mono text-xs tracking-wider transition-all shadow-sm rounded-full" id="theme-toggle" onclick="toggleTheme()" type="button">
+<!-- Moon Icon for Dark Mode indication -->
+<svg class="w-3.5 h-3.5 hidden dark:inline-block text-[#38bdf8]" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<!-- Sun Icon for Light Mode indication -->
+<svg class="w-3.5 h-3.5 inline-block dark:hidden text-[#0284c7]" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="font-bold" id="theme-toggle-label">KOYU</span>
+</button>
+<a class="text-xs uppercase tracking-wider font-mono text-zinc-600 dark:text-zinc-400 hover:text-black dark:hover:text-white px-4 py-1.5 border border-dark-border dark:border-dark-border border-zinc-300 hover:border-zinc-500 transition-all bg-white/40 dark:bg-transparent rounded-full" href="#deneyim">
+            [ Bilgi İşlem ]
+          </a>
+<a class="inline-flex items-center gap-2 bg-[#38bdf8] hover:bg-white text-slate-950 font-mono text-xs uppercase tracking-wider rounded-full px-6 py-2 shadow-lg shadow-sky-500/20 font-medium transition-all transform active:scale-95" href="#iletisim">
+            Bana Ulaşın ↗
+          </a>
+</div>
+</div></header><section class="mb-10 lg:mb-14"><div class="border border-dark-border dark:border-dark-border border-zinc-300 bg-white dark:bg-dark-surface rounded-3xl p-6 sm:p-8 lg:p-10 relative overflow-hidden shadow-sm dark:shadow-none">
+<!-- Top Editorial Metadata & Badges -->
+<div class="flex flex-wrap items-center justify-between gap-3 pb-6 border-b border-dark-border/80 dark:border-dark-border/80 border-zinc-200">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-[#0284c7] dark:bg-[#38bdf8] shadow-[0_0_8px_#38bdf8] animate-pulse"></span>
+<span class="text-xs font-mono font-semibold tracking-wider text-[#0284c7] dark:text-[#38bdf8] uppercase">OPEN FOR ROLES &amp; INTERNSHIPS // ADANA, TR</span>
+</div>
+<div class="flex items-center gap-3 font-mono text-xs text-zinc-600 dark:text-zinc-400">
+<span class="px-2.5 py-1 rounded bg-zinc-100 dark:bg-black border border-zinc-300 dark:border-dark-border text-zinc-800 dark:text-zinc-300 font-medium">SİSTEM VE BULUT MİMARİSİ // 2026</span>
+<span class="hidden sm:inline-block text-zinc-500">NODE_ID: ATU-01</span>
+</div>
+</div>
+<!-- Main Grid Content -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-8">
+<!-- Left Column: Editorial Welcome Statement -->
+<div class="lg:col-span-7 space-y-6">
+<div class="space-y-2">
+<span class="font-mono text-xs tracking-widest text-accent-muted dark:text-accent-muted text-zinc-500 uppercase block">[ PORTFOLYO &amp; TEKNİK DOSYA ]</span>
+<h2 class="text-3xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tighter text-zinc-950 dark:text-white leading-none">
+            BULUT ALTYAPISI <br/>
+<span class="text-[#0284c7] dark:text-[#38bdf8]">&amp; SİSTEM MİMARİSİ.</span>
+</h2>
+</div>
+<p class="text-zinc-600 dark:text-zinc-300 text-sm sm:text-base font-light leading-relaxed max-w-xl">
+          Geleceğin bulut altyapılarını, Linux çekirdek mimarilerini ve yüksek erişilebilir sistemlerini inşa eden bulut bilişim operatörü. Modern ağ güvenliği, KVM/Proxmox sanallaştırması ve uçtan uca otomasyon disiplini.
+        </p>
+<!-- Quick Action Pills -->
+<div class="flex flex-wrap items-center gap-3 pt-2 font-mono text-xs">
+<a class="inline-flex items-center gap-2 bg-[#0284c7] dark:bg-[#38bdf8] text-white dark:text-slate-950 font-bold px-4 py-2.5 rounded-full hover:bg-slate-900 dark:hover:bg-white transition-all transform active:scale-95 shadow-lg shadow-sky-500/20" href="#deneyim">
+<span>Keşfetmeye Başla</span>
+<span>↓</span>
+</a>
+<a class="inline-flex items-center gap-2 bg-zinc-100 dark:bg-dark-card text-zinc-800 dark:text-zinc-200 hover:text-black dark:hover:text-white border border-zinc-300 dark:border-dark-border hover:border-[#0284c7] dark:hover:border-[#38bdf8] px-4 py-2.5 rounded-full transition-all duration-200" href="#iletisim">
+<span>Özgeçmiş İndir (CV)</span>
+<span>↗</span>
+</a>
+<a class="inline-flex items-center gap-2 bg-zinc-100 dark:bg-dark-card text-zinc-700 dark:text-zinc-300 hover:text-[#0284c7] dark:hover:text-[#38bdf8] border border-zinc-300 dark:border-dark-border px-4 py-2.5 rounded-full transition-all duration-200" href="mailto:seferozbolt@gmail.com">
+<span>İletişime Geç</span>
+<span>↗</span>
+</a>
+</div>
+</div>
+<!-- Right Column: Stylized Server Node Frame (Olivia Bennet Style Card) -->
+<div class="lg:col-span-5">
+<div class="relative rounded-2xl bg-zinc-950 dark:bg-black border border-zinc-800 dark:border-dark-border p-5 dot-pattern overflow-hidden group shadow-md dark:shadow-none">
+<div class="flex items-center justify-between pb-3 border-b border-zinc-800 dark:border-dark-border/60 font-mono text-xs text-zinc-400 mb-4">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-red-500/80"></span>
+<span class="w-2 h-2 rounded-full bg-yellow-500/80"></span>
+<span class="w-2 h-2 rounded-full bg-green-500/80"></span>
+<span class="text-zinc-500 ml-1">welcome.sh</span>
+</div>
+<span class="text-[#38bdf8] font-bold">PROD // READY</span>
+</div>
+<div class="space-y-3 font-mono text-xs leading-relaxed">
 <div>
-<span class="text-secondary font-semibold">sefer@atü-cloud</span>:<span class="text-primary font-semibold">~</span>$ whoami
-                <div class="text-on-surface mt-0.5 ml-2 font-mono">sefer_ozbolat [Cloud Operations & Infra Apprentice]</div>
+<span class="text-zinc-500">$</span>
+<span class="text-[#38bdf8] ml-1">init --welcome</span>
+<span class="text-white">"Sefer Özbolat"</span>
 </div>
-<div class="pt-1">
-<span class="text-secondary font-semibold">sefer@atü-cloud</span>:<span class="text-primary font-semibold">~</span>$ cat about.txt
-                <div class="text-on-surface-variant mt-0.5 ml-2 leading-relaxed">
-                  • <span class="text-primary">Eğitim:</span> Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi<br/>
-                  • <span class="text-primary">Odak:</span> Linux Altyapıları, Sunucu Optimizasyonu, DevOps & Bulut Sistemleri<br/>
-                  • <span class="text-secondary">Hedef:</span> Yüksek erişilebilirlikli mikroservis ve hibrit bulut mimarileri tasarlamak.
-                </div>
+<div class="p-3 rounded-lg bg-zinc-900/90 dark:bg-dark-card/70 border border-zinc-800 dark:border-dark-border text-zinc-300 space-y-1">
+<div class="flex justify-between text-zinc-400">
+<span>ALAN:</span>
+<span class="text-white font-semibold">Bulut Bilişim Operatörlüğü</span>
 </div>
-<div class="pt-1 flex items-center gap-1">
-<span class="text-secondary font-semibold">sefer@atü-cloud</span>:<span class="text-primary font-semibold">~</span>$ 
-                <span class="w-2 h-4 bg-primary inline-block animate-pulse"></span>
+<div class="flex justify-between text-zinc-400">
+<span>KURUM:</span>
+<span class="text-zinc-200">ATÜ Bilgisayar Bilimleri</span>
+</div>
+<div class="flex justify-between text-zinc-400">
+<span>ÇEKİRDEK:</span>
+<span class="text-[#38bdf8]">Linux KVM, Proxmox, Docker</span>
 </div>
 </div>
-</div>
-</div>
-<!-- Terminal Bottom Highlights -->
-<div class="grid grid-cols-3 gap-space-sm pt-space-md mt-space-md">
-<div class="p-space-xs text-center bg-surface-container-low rounded-lg">
-<div class="font-headline-sm text-headline-sm text-primary font-bold">100%</div>
-<div class="font-code-snippet text-[11px] text-on-surface-variant uppercase mt-1">Öğrenme Tutkusu</div>
-</div>
-<div class="p-space-xs text-center bg-surface-container-low rounded-lg">
-<div class="font-headline-sm text-headline-sm text-secondary font-bold">ATÜ</div>
-<div class="font-code-snippet text-[11px] text-on-surface-variant uppercase mt-1">Bulut Bilişim</div>
-</div>
-<div class="p-space-xs text-center bg-surface-container-low rounded-lg">
-<div class="font-headline-sm text-headline-sm text-tertiary font-bold">B2</div>
-<div class="font-code-snippet text-[11px] text-on-surface-variant uppercase mt-1">Teknik İngilizce</div>
+<div class="text-zinc-500 text-[11px] pt-1 flex items-center justify-between">
+<span>TELEMETRİ: 100% OPERASYONEL</span>
+<span class="text-zinc-400">PING: 1.2ms</span>
 </div>
 </div>
 </div>
-<!-- Bento Card 2: YETENEKLER & TEKNOLOJİK YETKİNLİKLER (Col 5) -->
-<div class="lg:col-span-5 flex flex-col justify-between p-space-lg bg-surface-container-lowest rounded-xl shadow-xl transition-all duration-300" id="yetenekler">
-<div>
-<div class="flex items-center justify-between mb-space-md">
-<div class="flex items-center gap-space-sm">
-<span class="w-2.5 h-2.5 rounded-full bg-secondary shadow-[0_0_8px_rgba(78,222,163,0.6)]"></span>
-<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold uppercase tracking-wider">Yetenekler</h2>
 </div>
-<span class="font-code-snippet text-[11px] text-on-surface-variant">stack.json</span>
 </div>
-<div class="space-y-space-md">
-<!-- Programlama Dilleri -->
-<div class="bg-surface-container-low p-space-md rounded-lg space-y-space-xs">
-<div class="flex items-center gap-space-xs text-on-surface font-medium font-body-md">
-<span class="material-symbols-outlined text-primary text-[20px]">code_blocks</span>
-<span>Programlama Dilleri</span>
+</div></section>
+<!-- END: TopNavigation -->
+<!-- BEGIN: HeroSection -->
+<section class="mb-14 lg:mb-20">
+<!-- Architectural Editorial Header -->
+<div class="border-t border-b border-dark-border dark:border-dark-border border-zinc-300 py-4 my-4 flex flex-col md:flex-row md:items-end justify-between gap-2">
+<h1 class="text-3xl sm:text-5xl md:text-7xl font-extrabold uppercase tracking-tighter text-zinc-950 dark:text-white">
+          SEFER ÖZBOLAT
+        </h1>
+<p class="font-mono text-xs sm:text-sm text-zinc-600 dark:text-accent-muted max-w-sm text-left md:text-right uppercase tracking-wider">
+          ATÜ — Bulut Bilişim Operatörlüğü &amp; Altyapı
+        </p>
 </div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-                Otomasyon komut dosyaları, nesne yönelimli mimari ve temel backend geliştirme.
+<!-- Main Bento / Split Hero Area -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch mt-6"><!-- Left: Editorial Visual Frame -->
+<div class="lg:col-span-7 bg-white dark:bg-dark-surface border border-zinc-300 dark:border-dark-border rounded-3xl p-4 sm:p-6 flex flex-col justify-between relative overflow-hidden group shadow-sm dark:shadow-none">
+<!-- Top Mini Banner with Badge -->
+<div class="flex items-center justify-between mb-4 z-10">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-mono border border-zinc-300 dark:border-zinc-700 bg-zinc-100 dark:bg-black/60 text-zinc-800 dark:text-zinc-300">
+              ✦ Cloud Architecture &amp; Automation
+            </span>
+<span class="text-xs font-mono text-zinc-500">v2.4 // 2026</span>
+</div>
+<!-- Bold Backdrop Typo -->
+<div class="absolute -right-4 -bottom-10 select-none pointer-events-none opacity-5 dark:opacity-5 text-8xl md:text-9xl font-black font-mono text-black dark:text-white">
+            LINUX
+          </div>
+<!-- Center Visual Card -->
+<div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-zinc-950 dark:bg-dark-card border border-zinc-800 dark:border-dark-border/80 flex items-center justify-center p-6 dot-pattern">
+<div class="text-center relative z-10 max-w-md">
+<div class="inline-block p-4 rounded-2xl bg-black/80 border border-zinc-800 dark:border-dark-border mb-4 backdrop-blur-sm shadow-[0_0_20px_rgba(56,189,248,0.12)]">
+<svg class="w-12 h-12 text-[#38bdf8] mx-auto mb-2 drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+<div class="font-mono text-xs text-zinc-400">SERVER CLUSTER STATUS</div>
+<div class="text-lg font-bold text-white font-mono mt-0.5">ALPARSLAN TÜRKEŞ UNV.</div>
+</div>
+<p class="text-zinc-300 text-sm md:text-base font-light leading-relaxed">
+                Modern bulut altyapıları, ağ mimarisi ve otomasyon süreçleri üzerine odaklanan teknik mimar.
               </p>
-<div class="flex flex-wrap gap-2 pt-1">
-<div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-high text-on-surface font-code-snippet text-body-sm">
-<span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_6px_rgba(78,222,163,0.8)]"></span>
-<span class="font-semibold text-secondary">Python</span>
-<span class="text-[11px] text-on-surface-variant">Scripting/API</span>
-</div>
-<div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-high text-on-surface font-code-snippet text-body-sm">
-<span class="w-2 h-2 rounded-full bg-primary shadow-[0_0_6px_rgba(76,215,246,0.8)]"></span>
-<span class="font-semibold text-primary">C#</span>
-<span class="text-[11px] text-on-surface-variant">.NET Temelleri</span>
 </div>
 </div>
-</div>
-<!-- Sistem & Altyapı -->
-<div class="bg-surface-container-low p-space-md rounded-lg space-y-space-xs">
-<div class="flex items-center gap-space-xs text-on-surface font-medium font-body-md">
-<span class="material-symbols-outlined text-secondary text-[20px]">dns</span>
-<span>Sistem & Altyapı</span>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-                Sunucu orkestrasyonu, Linux ortamları ve sanallaştırma mimarisi.
-              </p>
-<div class="flex flex-wrap gap-2 pt-1">
-<div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-high font-code-snippet text-body-sm text-on-surface">
-<span class="material-symbols-outlined text-secondary text-[16px]">settings_suggest</span>
-<span>Sunucu Kurulumları</span>
-</div>
-<div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-high font-code-snippet text-body-sm text-on-surface">
-<span class="material-symbols-outlined text-primary text-[16px]">cloud</span>
-<span>Bulut Bilişim (Cloud)</span>
-</div>
-<div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-high font-code-snippet text-body-sm text-on-surface">
-<span class="material-symbols-outlined text-tertiary text-[16px]">terminal</span>
-<span>Linux CLI & Bash</span>
+<!-- Bottom Meta Strip -->
+<div class="mt-4 pt-4 border-t border-zinc-200 dark:border-dark-border/60 flex items-center justify-between text-xs font-mono text-zinc-500 dark:text-zinc-400">
+<span>KONUM: ADANA, TR</span>
+<span>ÖĞRENİM: ATÜ BİLGİSAYAR BİLİMLERİ</span>
 </div>
 </div>
-</div>
-<!-- Yabancı Diller & İletişim -->
-<div class="bg-surface-container-low p-space-md rounded-lg flex items-center justify-between">
+<!-- Right: The Olivia Bennet Action Drawer & Quick Links -->
+<div class="lg:col-span-5 bg-white dark:bg-dark-surface border border-zinc-300 dark:border-dark-border rounded-3xl p-6 flex flex-col justify-between shadow-sm dark:shadow-none">
 <div>
-<div class="flex items-center gap-space-xs text-on-surface font-medium font-body-md">
-<span class="material-symbols-outlined text-tertiary text-[20px]">translate</span>
-<span>İngilizce</span>
+<div class="border-b border-zinc-200 dark:border-dark-border pb-4 mb-6">
+<h2 class="text-2xl font-bold tracking-tight text-zinc-950 dark:text-white mb-1">
+                Operasyon &amp; Bağlantılar
+              </h2>
+<p class="text-xs text-zinc-500 dark:text-zinc-400 uppercase tracking-widest font-mono">
+                Hızlı Erişim &amp; Dokümantasyon
+              </p>
 </div>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
-                  Teknik dokümantasyon takibi ve global kaynak taraması
-                </p>
-</div>
-<div class="inline-flex flex-col items-end">
-<span class="px-space-sm py-1 rounded bg-tertiary/10 font-code-snippet text-code-snippet font-bold text-tertiary">
-                  B2 Seviyesi
+<!-- High-Contrast Action Menu List -->
+<div class="space-y-3 font-mono">
+<!-- Action 1: CV -->
+<a class="group flex items-center justify-between p-3.5 bg-zinc-100 dark:bg-dark-card border border-zinc-300 dark:border-dark-border hover:border-[#0284c7] dark:hover:border-[#38bdf8] rounded-xl transition-all duration-200 hover:-translate-y-0.5" href="#iletisim">
+<span class="text-sm font-semibold tracking-wide text-zinc-800 dark:text-zinc-200 group-hover:text-black dark:group-hover:text-white">
+                  Özgeçmiş (CV)
                 </span>
-<span class="text-[10px] text-on-surface-variant mt-1">Teknik İngilizce</span>
+<span class="bg-zinc-950 dark:bg-white text-white dark:text-black group-hover:bg-[#0284c7] dark:group-hover:bg-[#38bdf8] group-hover:text-white dark:group-hover:text-black px-3 py-1.5 rounded-lg text-xs font-bold tracking-wider flex items-center gap-1 transition-colors">
+                  İndir (PDF) ↗
+                </span>
+</a>
+<!-- Action 2: GitHub -->
+<a class="group flex items-center justify-between p-3.5 bg-zinc-100 dark:bg-dark-card border border-zinc-300 dark:border-dark-border hover:border-[#0284c7] dark:hover:border-[#38bdf8] rounded-xl transition-all duration-200 hover:-translate-y-0.5" href="https://github.com/seferozbolt" rel="noopener noreferrer" target="_blank">
+<span class="text-sm font-semibold tracking-wide text-zinc-800 dark:text-zinc-200 group-hover:text-black dark:group-hover:text-white">
+                  GitHub Deposu
+                </span>
+<span class="bg-zinc-950 dark:bg-white text-white dark:text-black group-hover:bg-[#0284c7] dark:group-hover:bg-[#38bdf8] group-hover:text-white dark:group-hover:text-black px-3 py-1.5 rounded-lg text-xs font-bold tracking-wider flex items-center gap-1 transition-colors">
+                  İncele ↗
+                </span>
+</a>
+<!-- Action 3: Contact Email -->
+<a class="group flex items-center justify-between p-3.5 bg-zinc-100 dark:bg-dark-card border border-zinc-300 dark:border-dark-border hover:border-[#0284c7] dark:hover:border-[#38bdf8] rounded-xl transition-all duration-200 hover:-translate-y-0.5" href="mailto:seferozbolt@gmail.com">
+<span class="text-sm font-semibold tracking-wide text-zinc-800 dark:text-zinc-200 group-hover:text-black dark:group-hover:text-white">
+                  E-posta Gönder
+                </span>
+<span class="bg-zinc-950 dark:bg-white text-white dark:text-black group-hover:bg-[#0284c7] dark:group-hover:bg-[#38bdf8] group-hover:text-white dark:group-hover:text-black px-3 py-1.5 rounded-lg text-xs font-bold tracking-wider flex items-center gap-1 transition-colors">
+                  İletişim ↗
+                </span>
+</a>
+<!-- Action 4: LinkedIn / Live Node -->
+<a class="group flex items-center justify-between p-3.5 bg-zinc-100 dark:bg-dark-card border border-zinc-300 dark:border-dark-border hover:border-[#0284c7] dark:hover:border-[#38bdf8] rounded-xl transition-all duration-200 hover:-translate-y-0.5" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+<span class="text-sm font-semibold tracking-wide text-zinc-800 dark:text-zinc-200 group-hover:text-black dark:group-hover:text-white">
+                  LinkedIn Ağı
+                </span>
+<span class="bg-zinc-950 dark:bg-white text-white dark:text-black group-hover:bg-[#0284c7] dark:group-hover:bg-[#38bdf8] group-hover:text-white dark:group-hover:text-black px-3 py-1.5 rounded-lg text-xs font-bold tracking-wider flex items-center gap-1 transition-colors">
+                  Bağlan ↗
+                </span>
+</a>
 </div>
 </div>
+<!-- Bottom Status Telemetry Box -->
+<div class="mt-6 p-4 rounded-xl bg-zinc-950 dark:bg-black border border-zinc-800 dark:border-dark-border font-mono text-xs">
+<div class="flex items-center justify-between text-zinc-400 mb-1">
+<span>ALTYAPI PROTOKOLÜ</span>
+<span class="text-[#38bdf8] font-semibold drop-shadow-[0_0_6px_rgba(56,189,248,0.4)]">STABİL [200 OK]</span>
 </div>
+<div class="text-zinc-500 truncate">
+              $ systemctl status cloud-daemon.service --active
+            </div>
 </div>
+</div></div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: EditorialBioAndTerminal -->
+<section class="mb-14 lg:mb-20"><!-- Section Divider Header -->
+<div class="border-t border-b border-dark-border dark:border-dark-border border-zinc-300 py-3 mb-8 flex items-center justify-between">
+<span class="font-mono text-xs tracking-widest text-[#0284c7] dark:text-[#38bdf8] uppercase font-semibold">// 01 — BİYOGRAFİ &amp; EĞİTİM</span>
+<span class="font-mono text-xs text-zinc-500 uppercase">AKADEMİK &amp; MİMARİ ALTYAPI</span>
 </div>
-</div>
-<!-- 3. BENTO CARD: İŞ DENEYİMİ & STAJ ZAMAN ÇİZELGESİ -->
-<div class="mb-gutter-lg p-space-lg bg-surface-container-lowest rounded-xl shadow-xl transition-all duration-300" id="deneyim">
-<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-space-lg pb-space-sm">
-<div class="flex items-center gap-space-sm">
-<span class="w-2.5 h-2.5 rounded-full bg-primary shadow-[0_0_8px_rgba(76,215,246,0.6)]"></span>
-<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold uppercase tracking-wider">İş & Staj Deneyimi</h2>
-</div>
-<div class="inline-flex items-center gap-space-xs text-on-surface-variant font-code-snippet text-body-sm">
-<span class="material-symbols-outlined text-secondary text-[16px]">history_edu</span>
-<span>Profesyonel Pratik Geçmişi</span>
-</div>
-</div>
-<!-- Experience Item Card with Modern Node Layout -->
-<div class="relative pl-6 sm:pl-8">
-<!-- Connecting Line -->
-<div class="absolute left-2 sm:left-3 top-2 bottom-2 w-[1px] bg-outline-variant/40"></div>
-<!-- Glowing Active Node Indicator -->
-<div class="absolute left-0 sm:left-1 top-2.5 w-4 h-4 rounded-full bg-surface-container-lowest flex items-center justify-center">
-<div class="w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_rgba(76,215,246,0.9)] animate-pulse"></div>
-</div>
-<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md transition-colors space-y-space-md">
-<!-- Role & Org Meta -->
-<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-xs">
-<div>
-<div class="inline-flex items-center gap-space-xs px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-code-snippet text-badge-label font-semibold mb-1">
-                STAJYER • BİLGİ İŞLEM
-              </div>
-<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">
-                Stajyer | Belediye
-              </h3>
-<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-2 mt-0.5">
-<span class="material-symbols-outlined text-[16px] text-on-surface-variant">corporate_fare</span>
-                Bilgi İşlem Daire Başkanlığı • Adana
-              </p>
-</div>
-<div class="inline-flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface font-code-snippet text-body-sm self-start md:self-auto">
-<span class="material-symbols-outlined text-[16px] text-secondary">calendar_today</span>
-<span>1 Ay (Staj Dönemi)</span>
-</div>
-</div>
-<!-- Tasks & Achievements List -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
-<div class="flex items-start gap-space-sm p-space-sm bg-surface-container-lowest rounded-lg">
-<div class="h-8 w-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-primary text-[20px]">router</span>
-</div>
-<div>
-<h4 class="font-body-md text-body-md text-on-surface font-medium">Altyapı ve Sistem Süreçleri</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-relaxed">
-                  Bilgi işlem ve altyapı süreçlerini yerinde gözlemleme, sunucu odası işleyişini inceleme ve pratik alıştırmalar gerçekleştirme.
-                </p>
-</div>
-</div>
-<div class="flex items-start gap-space-sm p-space-sm bg-surface-container-lowest rounded-lg">
-<div class="h-8 w-8 rounded-lg bg-secondary/10 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-secondary text-[20px]">support_agent</span>
-</div>
-<div>
-<h4 class="font-body-md text-body-md text-on-surface font-medium">Teknik Destek & Çözüm</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-relaxed">
-                  Kurum içi ağ terminalleri, donanım yapılandırmaları ve kurumsal teknik destek süreçlerine aktif operasyonel katkı sağlama.
-                </p>
-</div>
-</div>
-</div>
-<!-- Tech Tags Used in Role -->
-<div class="flex flex-wrap items-center gap-space-xs pt-space-xs">
-<span class="text-[12px] font-code-snippet text-on-surface-variant mr-1">İlgili Alanlar:</span>
-<span class="px-space-xs py-0.5 rounded bg-surface-container font-code-snippet text-[11px] text-on-surface">Yerel Ağ (LAN/VLAN)</span>
-<span class="px-space-xs py-0.5 rounded bg-surface-container font-code-snippet text-[11px] text-on-surface">Donanım Bakımı</span>
-<span class="px-space-xs py-0.5 rounded bg-surface-container font-code-snippet text-[11px] text-on-surface">Son Kullanıcı Desteği</span>
-<span class="px-space-xs py-0.5 rounded bg-surface-container font-code-snippet text-[11px] text-on-surface">Sistem Yönetimi</span>
-</div>
-</div>
-</div>
-</div>
-<!-- 4. BENTO CARD: İLETİŞİM & HIZLI ERİŞİM (Contact Section) -->
-<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-xl transition-all duration-300 relative overflow-hidden" id="iletisim">
-<div class="absolute bottom-0 right-0 w-72 h-72 bg-secondary/5 rounded-full blur-3xl pointer-events-none"></div>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
-<!-- Contact Meta & Direct Channels (Col 5) -->
-<div class="lg:col-span-5 flex flex-col justify-between">
-<div>
-<div class="flex items-center gap-space-sm mb-space-sm">
-<span class="w-2.5 h-2.5 rounded-full bg-secondary shadow-[0_0_8px_rgba(78,222,163,0.6)]"></span>
-<span class="font-headline-sm text-headline-sm text-on-surface font-semibold uppercase tracking-wider">İletişim & Erişim</span>
-</div>
-<h3 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mb-space-xs">
-              Yeni Fikirler & Staj İçin <span class="text-primary font-bold">Görüşelim.</span>
-</h3>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-lg">
-              Bulut bilişim projeleri, sunucu yönetimi staj imkanları veya teknik sorularınız için dilediğiniz kanaldan mesaj gönderebilirsiniz. En kısa sürede geri dönüş yapıyorum.
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left: Swiss Academic Bio Style -->
+<div class="lg:col-span-6 space-y-6">
+<h3 class="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-950 dark:text-white leading-tight">
+            Bulut Teknolojileri ve Dağıtık Sistem Mimarisi Üzerine Odaklanan Mühendislik Perspektifi.
+          </h3>
+<div class="space-y-4 text-zinc-600 dark:text-zinc-300 font-light leading-relaxed">
+<p>
+              Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi'nde (ATÜ) Bulut Bilişim Operatörlüğü alanında akademik öğrenimimi sürdürmekteyim. Modern sistemlerin dayanıklılığı, ölçeklenebilirliği ve güvenliği temel odak alanımı oluşturmaktadır.
+            </p>
+<p>
+              Linux çekirdek optimizasyonları, sanallaştırma katmanları (KVM, Proxmox), konteynerizasyon mimarileri ve yerel ağ (LAN/VLAN) yapılandırmalarında hem akademik hem de saha deneyimine sahibim.
             </p>
 </div>
-<!-- Channel Badges -->
-<div class="space-y-space-sm mb-space-md lg:mb-0">
-<!-- Mail Box -->
-<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
-<div class="flex items-center gap-space-sm">
-<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+<!-- Institutional Credentials Table -->
+<div class="border-t border-zinc-300 dark:border-dark-border pt-4">
+<dl class="divide-y divide-zinc-200 dark:divide-dark-border text-sm">
+<div class="py-2.5 flex justify-between">
+<dt class="font-mono text-zinc-500 dark:text-zinc-400">Üniversite</dt>
+<dd class="font-medium text-zinc-950 dark:text-white text-right">Adana Alparslan Türkeş Bilim ve Teknoloji Üniv. (ATÜ)</dd>
+</div>
+<div class="py-2.5 flex justify-between">
+<dt class="font-mono text-zinc-500 dark:text-zinc-400">Bölüm / Alan</dt>
+<dd class="font-medium text-[#0284c7] dark:text-[#38bdf8] text-right font-semibold">Bulut Bilişim Operatörlüğü</dd>
+</div>
+<div class="py-2.5 flex justify-between">
+<dt class="font-mono text-zinc-500 dark:text-zinc-400">Uzmanlaşma</dt>
+<dd class="font-medium text-zinc-950 dark:text-white text-right">Sistem Otomasyonu, Linux CLI &amp; Sanallaştırma</dd>
+</div>
+</dl>
+</div>
+</div>
+<!-- Right: Interactive Terminal Display -->
+<div class="lg:col-span-6 flex flex-col">
+<div class="bg-zinc-950 dark:bg-black border border-zinc-800 dark:border-dark-border rounded-2xl overflow-hidden flex-1 flex flex-col font-mono text-xs sm:text-sm shadow-md dark:shadow-none">
+<!-- Terminal Title Bar -->
+<div class="bg-zinc-900 dark:bg-dark-surface px-4 py-3 border-b border-zinc-800 dark:border-dark-border flex items-center justify-between">
+<div class="flex items-center space-x-2">
+<span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+<span class="text-xs text-zinc-400 ml-2">sefer@atu-cloud-node: ~</span>
+</div>
+<span class="text-zinc-500 text-xs">bash - 80x24</span>
+</div>
+<!-- Terminal Output Body -->
+<div class="p-6 space-y-4 text-zinc-300 leading-relaxed overflow-x-auto flex-1">
+<div>
+<span class="text-[#38bdf8]">sefer@atu:~$</span> neofetch --architecture
+              </div>
+<div class="text-zinc-400 pl-2 border-l-2 border-[#38bdf8]/50">
+<p><span class="text-white font-bold">OS:</span> AlmaLinux 9 / Ubuntu Server LTS</p>
+<p><span class="text-white font-bold">Kernel:</span> 6.8.0-cloud-opt</p>
+<p><span class="text-white font-bold">Shell:</span> bash &amp; zsh</p>
+<p><span class="text-white font-bold">Stack:</span> Docker, Proxmox VE, NGINX, Python</p>
+<p><span class="text-white font-bold">Uptime:</span> 99.98% SLA target</p>
 </div>
 <div>
-<div class="font-code-snippet text-[11px] text-on-surface-variant uppercase">E-Posta Adresi</div>
-<a class="font-body-md font-medium text-on-surface hover:text-primary transition-colors" href="mailto:seferozbolt@gmail.com">
-                    seferozbolt@gmail.com
-                  </a>
-</div>
-</div>
-<button class="px-space-xs py-1 rounded bg-surface-container text-on-surface-variant hover:text-primary font-code-snippet text-[11px] transition-all" onclick="navigator.clipboard.writeText('seferozbolt@gmail.com'); this.innerText='Kopyalandı';">
-                Kopyala
-              </button>
-</div>
-<!-- GitHub Box -->
-<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
-<div class="flex items-center gap-space-sm">
-<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
-<span class="material-symbols-outlined text-[20px]">terminal</span>
+<span class="text-[#38bdf8]">sefer@atu:~$</span> cat /etc/sefer-skills.conf
+              </div>
+<div class="bg-zinc-900/60 dark:bg-dark-card/50 p-3 rounded border border-zinc-800 dark:border-dark-border text-xs text-zinc-300 space-y-1">
+<div class="text-[#38bdf8]">[Core_Capabilities]</div>
+<div>+ Python &amp; C# Scripting &amp; Otomasyon</div>
+<div>+ Ağ Güvenliği (Firewall, VLAN Segmentasyonu)</div>
+<div>+ Dağıtık Bulut Sunucu Yönetimi</div>
+<div>+ Kamu &amp; Kurumsal BT Altyapı Denetimi</div>
 </div>
 <div>
-<div class="font-code-snippet text-[11px] text-on-surface-variant uppercase">GitHub Deposu</div>
-<a class="font-body-md font-medium text-on-surface hover:text-secondary transition-colors" href="https://github.com/seferozbolat" rel="noreferrer" target="_blank">
-                    github.com/seferozbolat
-                  </a>
+<span class="text-[#38bdf8]">sefer@atu:~$</span> <span class="animate-pulse text-[#38bdf8]">_</span>
 </div>
 </div>
-<a class="px-space-xs py-1 rounded bg-surface-container text-on-surface-variant hover:text-secondary font-code-snippet text-[11px] transition-all" href="https://github.com/seferozbolat" rel="noreferrer" target="_blank">
-                Aç →
-              </a>
 </div>
-<!-- Web Domain Box -->
-<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
-<div class="flex items-center gap-space-sm">
-<div class="w-10 h-10 rounded-lg bg-tertiary/10 flex items-center justify-center text-tertiary">
-<span class="material-symbols-outlined text-[20px]">public</span>
 </div>
+</div></section>
+<!-- END: EditorialBioAndTerminal -->
+<!-- BEGIN: ExperienceAndSkills -->
+<section class="mb-14 lg:mb-20" id="deneyim"><!-- Section Divider Header -->
+<div class="border-t border-b border-dark-border dark:border-dark-border border-zinc-300 py-3 mb-8 flex items-center justify-between">
+<span class="font-mono text-xs tracking-widest text-[#0284c7] dark:text-[#38bdf8] uppercase font-semibold">// 02 — DENEYİM &amp; YETKİNLİKLER</span>
+<span class="font-mono text-xs text-zinc-500 uppercase">PROFESYONEL GEÇMİŞ</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Experience Timeline -->
+<div class="md:col-span-7 space-y-6">
+<h4 class="text-xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white mb-4">
+            Saha &amp; Staj Tecrübesi
+          </h4>
+<div class="border border-zinc-300 dark:border-dark-border bg-white dark:bg-dark-surface p-6 rounded-2xl relative overflow-hidden shadow-sm dark:shadow-none">
+<div class="flex items-baseline justify-between border-b border-zinc-200 dark:border-dark-border pb-3 mb-4">
 <div>
-<div class="font-code-snippet text-[11px] text-on-surface-variant uppercase">Kişisel Web Sitesi</div>
-<a class="font-body-md font-medium text-on-surface hover:text-tertiary transition-colors" href="https://seferozbolat.com.tr" rel="noreferrer" target="_blank">
-                    seferozbolat.com.tr
-                  </a>
+<h5 class="text-lg font-bold text-zinc-950 dark:text-white">Belediye Bilgi İşlem Daire Başkanlığı</h5>
+<span class="text-xs font-mono text-[#0284c7] dark:text-[#38bdf8] font-semibold">Bilgi İşlem ve Ağ Stajyeri</span>
 </div>
-</div>
-<a class="px-space-xs py-1 rounded bg-surface-container text-on-surface-variant hover:text-tertiary font-code-snippet text-[11px] transition-all" href="https://seferozbolat.com.tr" rel="noreferrer" target="_blank">
-                Ziyaret Et
-              </a>
-</div>
-</div>
-</div>
-<!-- Minimal Interactive Message Form (Col 7) -->
-<div class="lg:col-span-7 bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col justify-between">
-<form class="space-y-space-md" onsubmit="event.preventDefault(); document.getElementById('formSuccess').classList.remove('hidden');">
-<div class="flex items-center justify-between pb-space-xs">
-<span class="font-code-snippet text-code-snippet text-on-surface font-semibold flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-[18px]">edit_note</span>
-                HIZLI MESAJ FORMU
+<span class="font-mono text-xs text-zinc-700 dark:text-zinc-400 bg-zinc-100 dark:bg-black px-2.5 py-1 rounded border border-zinc-300 dark:border-dark-border">
+                Staj Dönemi
               </span>
-<span class="font-badge-label text-[11px] text-on-surface-variant">256-BIT ENCRYPTED</span>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
-<div class="space-y-1">
-<label class="block font-code-snippet text-[12px] text-on-surface-variant">Adınız & Soyadınız</label>
-<input class="w-full bg-surface-container-lowest px-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary transition-all" placeholder="Ad Soyad" required="" type="text"/>
-</div>
-<div class="space-y-1">
-<label class="block font-code-snippet text-[12px] text-on-surface-variant">E-Posta Adresiniz</label>
-<input class="w-full bg-surface-container-lowest px-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary transition-all" placeholder="ornek@alanadi.com" required="" type="email"/>
+<ul class="space-y-2.5 text-zinc-600 dark:text-zinc-300 text-sm list-disc list-inside">
+<li>Yerel ağ (LAN/WAN) omurgasında switch, router ve patch panel yapılandırması.</li>
+<li>Personel donanım ve yazılım destek operasyonları, domain ortamı (Active Directory) desteği.</li>
+<li>Kurumsal sunucu odası çevre birimleri, yedekleme ve güvenlik prosedürlerinin incelenmesi.</li>
+<li>Ağ izolasyonu ve son kullanıcı erişim yetkilendirme süreçlerine aktif katılım.</li>
+</ul>
 </div>
 </div>
-<div class="space-y-1">
-<label class="block font-code-snippet text-[12px] text-on-surface-variant">Konu</label>
-<input class="w-full bg-surface-container-lowest px-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary transition-all" placeholder="Staj / İş Görüşmesi / Altyapı Danışmanlığı" required="" type="text"/>
+<!-- Core Technical Matrix -->
+<div class="md:col-span-5 space-y-6">
+<h4 class="text-xl font-bold uppercase tracking-tight text-zinc-950 dark:text-white mb-4">
+            Teknik Yeterlilik Matrisi
+          </h4>
+<div class="grid grid-cols-1 gap-3 font-mono text-xs">
+<div class="p-3.5 bg-white dark:bg-dark-surface border border-zinc-300 dark:border-dark-border rounded-xl flex items-center justify-between shadow-sm dark:shadow-none">
+<div>
+<div class="text-zinc-950 dark:text-white font-semibold">Linux &amp; CLI</div>
+<div class="text-zinc-500">Debian, Ubuntu Server, RedHat</div>
 </div>
-<div class="space-y-1">
-<label class="block font-code-snippet text-[12px] text-on-surface-variant">Mesajınız</label>
-<textarea class="w-full bg-surface-container-lowest px-space-md py-2.5 rounded-lg text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary transition-all resize-none" placeholder="Mesajınızı detaylandırın..." required="" rows="4"></textarea>
+<span class="text-[#0284c7] dark:text-[#38bdf8] font-bold">İleri Düzey</span>
 </div>
-<div class="flex items-center justify-between pt-space-xs">
-<div class="hidden text-secondary font-code-snippet text-body-sm flex items-center gap-1" id="formSuccess">
-<span class="material-symbols-outlined text-[18px]">check_circle</span>
-<span>Mesajınız başarıyla iletildi!</span>
+<div class="p-3.5 bg-white dark:bg-dark-surface border border-zinc-300 dark:border-dark-border rounded-xl flex items-center justify-between shadow-sm dark:shadow-none">
+<div>
+<div class="text-zinc-950 dark:text-white font-semibold">Yazılım &amp; Komut Dosyası</div>
+<div class="text-zinc-500">Python, C#, Bash Scripting</div>
 </div>
-<button class="ml-auto inline-flex items-center gap-space-sm px-space-lg h-[40px] rounded-lg bg-primary text-on-primary font-body-md font-semibold hover:bg-primary-fixed shadow-[0_0_20px_-4px_rgba(76,215,246,0.35)] transition-all" type="submit">
-<span class="material-symbols-outlined text-[18px]">send</span>
-<span>Mesajı Gönder</span>
-</button>
+<span class="text-[#0284c7] dark:text-[#38bdf8] font-bold">Aktif</span>
 </div>
-</form>
+<div class="p-3.5 bg-white dark:bg-dark-surface border border-zinc-300 dark:border-dark-border rounded-xl flex items-center justify-between shadow-sm dark:shadow-none">
+<div>
+<div class="text-zinc-950 dark:text-white font-semibold">Bulut &amp; Sanallaştırma</div>
+<div class="text-zinc-500">Docker, Proxmox, Sanal Ağlar</div>
+</div>
+<span class="text-[#0284c7] dark:text-[#38bdf8] font-bold">Uygulamalı</span>
+</div>
+<div class="p-3.5 bg-white dark:bg-dark-surface border border-zinc-300 dark:border-dark-border rounded-xl flex items-center justify-between shadow-sm dark:shadow-none">
+<div>
+<div class="text-zinc-950 dark:text-white font-semibold">Ağ Protokolleri &amp; Donanım</div>
+<div class="text-zinc-500">TCP/IP, DNS, DHCP, VLAN, Routing</div>
+</div>
+<span class="text-[#0284c7] dark:text-[#38bdf8] font-bold">Yetkin</span>
 </div>
 </div>
 </div>
+</div></section>
+<!-- END: ExperienceAndSkills -->
+<!-- BEGIN: ContactFooter -->
+<footer class="border-t-2 border-zinc-950 dark:border-white pt-8 pb-12" id="iletisim"><div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
+<div>
+<span class="font-mono text-xs uppercase tracking-widest text-zinc-500 dark:text-accent-muted block mb-2">
+            İletişim &amp; İş Birliği
+          </span>
+<h2 class="text-3xl sm:text-5xl font-black uppercase tracking-tight text-zinc-950 dark:text-white">
+            Yeni Projeler İçin <br/>
+            Bağlantı Kurun.
+          </h2>
 </div>
-</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30 py-space-lg"><div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-col sm:flex-row items-center gap-space-sm text-center sm:text-left"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 Sefer Özbolat. Tüm hakları saklıdır.</p><div class="inline-flex items-center gap-space-xs px-space-xs py-0.5 rounded bg-surface-container border border-secondary/30 font-badge-label text-badge-label uppercase text-secondary"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span><span>Sistemler Aktif • Adana, TR</span></div></div><div class="flex items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-primary transition-colors" href="https://github.com" rel="noreferrer" target="_blank">GitHub</a><a class="hover:text-primary transition-colors" href="mailto:seferozbolt@gmail.com">E-posta</a><a class="hover:text-primary transition-colors" href="#">Web</a></div></div></footer></body></html>
+<div class="flex flex-col gap-2 font-mono text-sm w-full md:w-auto">
+<a class="px-5 py-3 bg-zinc-950 dark:bg-white text-white dark:text-black font-bold tracking-wider hover:bg-[#0284c7] dark:hover:bg-[#38bdf8] hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] text-center transition-all" href="mailto:seferozbolt@gmail.com">
+            seferozbolt@gmail.com ↗
+          </a>
+</div>
+</div>
+<!-- Minimal Bottom Legal & Meta -->
+<div class="border-t border-zinc-300 dark:border-dark-border pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-zinc-500">
+<div>
+          © 2026 Sefer Özbolat. Tüm hakları saklıdır.
+        </div>
+<div class="flex items-center space-x-6">
+<a class="hover:text-[#0284c7] dark:hover:text-[#38bdf8] transition-colors" href="https://github.com/seferozbolt" rel="noopener noreferrer" target="_blank">
+            github.com/seferozbolt
+          </a>
+<span>•</span>
+<span class="text-zinc-600 dark:text-zinc-400">Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi</span>
+</div>
+</div></footer>
+<!-- END: ContactFooter -->
+</div>
+<!-- Theme Persistence and Toggle Script -->
+<script>
+  function applyTheme(isDark) {
+    const root = document.documentElement;
+    const label = document.getElementById('theme-toggle-label');
+    if (isDark) {
+      root.classList.add('dark');
+      if (label) label.textContent = 'KOYU';
+      localStorage.setItem('theme', 'dark');
+    } else {
+      root.classList.remove('dark');
+      if (label) label.textContent = 'AÇIK';
+      localStorage.setItem('theme', 'light');
+    }
+  }
+
+  function toggleTheme() {
+    const isDark = document.documentElement.classList.contains('dark');
+    applyTheme(!isDark);
+  }
+
+  (function initTheme() {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'light') {
+      applyTheme(false);
+    } else {
+      applyTheme(true);
+    }
+  })();
+</script>
+</body></html>
