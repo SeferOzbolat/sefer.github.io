@@ -4,29 +4,72 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>404: Düğüm Bulunamadı — Sefer Özbolat</title>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <meta name="robots" content="noindex, nofollow">
+  
+  <!-- Tema Algılayıcı (Ana sayfadaki Açık/Koyu seçimini uygular) -->
+  <script>
+    (function() {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+          document.documentElement.classList.remove('dark');
+        } else {
+          document.documentElement.classList.add('dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
 </head>
-<body class="bg-[#090a0c] text-zinc-100 font-mono min-h-screen flex items-center justify-center p-4">
-  <div class="max-w-md w-full bg-[#111317] border border-[#262a35] rounded-2xl p-6 shadow-2xl space-y-4">
-    <div class="flex items-center justify-between border-b border-[#262a35] pb-3 text-xs text-zinc-400">
+<body class="bg-slate-50 dark:bg-dark-base text-slate-900 dark:text-zinc-100 font-mono min-h-screen flex items-center justify-center p-4 relative antialiased">
+
+  <!-- Arka Plan Izgara Dokusu -->
+  <div aria-hidden="true" class="fixed inset-0 grid-lines pointer-events-none z-0"></div>
+
+  <!-- 404 Kartı -->
+  <div class="relative z-10 max-w-md w-full bg-white dark:bg-dark-surface border border-slate-200 dark:border-dark-border rounded-3xl p-6 sm:p-8 shadow-xl dark:shadow-2xl space-y-5">
+    
+    <!-- Üst Başlık Çubuğu -->
+    <div class="flex items-center justify-between border-b border-slate-200 dark:border-dark-border pb-3 text-xs text-slate-500 dark:text-zinc-400">
       <div class="flex items-center gap-2">
-        <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
-        <span>error_handler.sh</span>
+        <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></span>
+        <span class="font-semibold text-slate-700 dark:text-zinc-300">error_handler.sh</span>
       </div>
-      <span class="text-red-400 font-bold">STATUS // 404</span>
+      <span class="text-[#0284c7] dark:text-[#38bdf8] font-bold">STATUS // 404</span>
     </div>
-    <div class="space-y-2 text-xs leading-relaxed">
-      <div><span class="text-[#38bdf8]">sefer@atu:~$</span> locate requested_url</div>
-      <div class="text-red-400">Error: Hedef düğüm veya dizin sunucuda bulunamadı.</div>
+
+    <!-- Terminal Çıktısı (Her iki modda da yüksek kontrastlı koyu kutu) -->
+    <div class="p-3.5 rounded-xl bg-slate-900 dark:bg-black border border-slate-800 dark:border-dark-border space-y-1.5 text-xs leading-relaxed">
+      <div>
+        <span class="text-[#38bdf8]">sefer@atu:~$</span> 
+        <span class="text-white">locate requested_url</span>
+      </div>
+      <div class="text-zinc-400">
+        Error: Hedef düğüm veya dizin sunucuda bulunamadı.
+      </div>
     </div>
-    <h1 class="text-2xl font-bold text-white font-sans pt-2">404 — Sayfa Bulunamadı</h1>
-    <p class="text-zinc-400 text-xs leading-relaxed">Aradığınız bağlantı taşınmış veya silinmiş olabilir.</p>
+
+    <!-- Açıklama Metni (Light modda koyu lacivert/siyah, Dark modda beyaz) -->
+    <div class="space-y-2 pt-1">
+      <h1 class="text-2xl font-bold text-slate-900 dark:text-white font-sans tracking-tight">
+        404 — Sayfa Bulunamadı
+      </h1>
+      <p class="text-slate-600 dark:text-zinc-300 text-xs leading-relaxed font-sans">
+        Aradığınız bağlantı taşınmış, silinmiş veya hiç var olmamış olabilir.
+      </p>
+    </div>
+
+    <!-- Ana Sayfaya Dönüş Butonu -->
     <div class="pt-2">
-      <a href="/" class="inline-flex items-center justify-center w-full bg-[#38bdf8] hover:bg-white text-slate-950 font-bold text-xs uppercase tracking-wider py-3 px-4 rounded-xl transition-all">
+      <a href="/" class="inline-flex items-center justify-center w-full bg-[#0284c7] dark:bg-[#38bdf8] hover:bg-slate-900 dark:hover:bg-white text-white dark:text-slate-950 font-bold text-xs uppercase tracking-wider py-3.5 px-5 rounded-xl transition-all shadow-md shadow-sky-500/20">
         ← Ana Düğüme Dön (/root)
       </a>
     </div>
+
   </div>
 </body>
 </html>
