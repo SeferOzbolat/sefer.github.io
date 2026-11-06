@@ -1,0 +1,19 @@
+# Sefer Özbolat — Bulut Bilişim & Altyapı Mimarı
+
+> Adana Alparslan Türkeş Bilim ve Teknoloji Üniversitesi (ATÜ) Bulut Bilişim Operatörlüğü bölümü öğrencisi ve sistem/altyapı mimarı.
+
+## Odak Alanları ve Yetkinlikler
+- **Bulut & Sanallaştırma:** Linux KVM, Proxmox VE, Docker, Dağıtık Sunucu Yönetimi
+- **İşletim Sistemleri:** AlmaLinux, Ubuntu Server LTS, Debian, RedHat, Linux CLI
+- **Yazılım & Otomasyon:** Python, C#, Bash Scripting
+- **Ağ & Güvenlik:** TCP/IP, DNS, DHCP, VLAN Segmentasyonu, Routing, Firewall, Active Directory
+
+## Deneyim
+- **Belediye Bilgi İşlem Daire Başkanlığı (Bilgi İşlem ve Ağ Stajyeri):** Yerel ağ (LAN/WAN) switch/router/patch panel yapılandırması, Active Directory desteği, sunucu odası yedekleme ve güvenlik prosedürleri.
+
+## Bağlantılar ve İletişim
+- Web: https://seferozbolat.com.tr
+- Özgeçmiş (CV): https://seferozbolat.com.tr/cv.pdf
+- GitHub: https://github.com/SeferOzbolat
+- LinkedIn: https://www.linkedin.com/in/sefer-%C3%B6zbolat-1949a8448/
+- E-posta: seferozbolt@gmail.com
