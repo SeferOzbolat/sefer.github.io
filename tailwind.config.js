@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./index.html"],
+  content: ["./index.html", "./404.html"],
   darkMode: 'class',
   theme: {
     extend: {
